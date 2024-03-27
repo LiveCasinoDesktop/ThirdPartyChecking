@@ -28,4 +28,11 @@ public class JavaScript extends Driver {
         js.executeScript("arguments[0].scrollIntoView(true);", element.get(index-1));
 
     }
+    public static void scrollTo(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        // Execute JavaScript to scroll the element into view:
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+
+    }
 }

@@ -5,35 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b97d22c-569b-4065-a5db-682945c2de9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extent-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/launch4j-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/engine/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Pages/EvolutionComponents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Pages/Pragmatic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Pages/SBOTOP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/Helper/Assertion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/Helper/Drivers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/Helper/JavaScript.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/Helper/Waiting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/Events.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/Objects/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/Settings/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Evolution.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Excel/tableList.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/spark-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Pages/Sexy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Pragmatic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/EvolutionMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/PragmaticMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/SexyMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/Evolution.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/Pragmatic.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/SexyGaming.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Pages/SBOTOP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Pages/SBOTOP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Helper/Drivers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Helper/Drivers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Helper/JavaScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Helper/JavaScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Settings/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Settings/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Evolution.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Excel/tableList.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Excel/tableList.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,21 +71,23 @@
       <recent name="C:\Users\kar.par\Documents\GitHub\ThirdPartyAutomation\src\test\resources" />
       <recent name="C:\Users\kar.par\Documents\GitHub\ThirdPartyAutomation\src\main\java" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kar.par\Documents\GitHub\ThirdPartyAutomation\src\test\resources\Features" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Modules.Steps" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Checking Evolution">
-    <configuration name="Scenario: Checking Evolution" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: Evolution">
+    <configuration name="Feature: Evolution" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Evolution.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Evolution.feature" />
       <option name="GLUE" value="Modules.Steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ThirdPartyAutomation" />
-      <option name="NAME_FILTER" value="^Checking Evolution$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Checking Evolution$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Checking Evolution" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Evolution" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -107,15 +99,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Reading Excel" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: Pragmatic" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Evolution.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Pragmatic.feature" />
       <option name="GLUE" value="Modules.Steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ThirdPartyAutomation" />
-      <option name="NAME_FILTER" value="^Reading Excel$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Reading Excel$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Reading Excel" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Pragmatic" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -127,20 +118,72 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: SexyGaming" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/SexyGaming.feature" />
+      <option name="GLUE" value="Modules.Steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ThirdPartyAutomation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Runner" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: SexyGaming" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Checking Baccarat Sexy Gaming Game" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/SexyGaming.feature" />
+      <option name="GLUE" value="Modules.Steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ThirdPartyAutomation" />
+      <option name="NAME_FILTER" value="^Checking Baccarat Sexy Gaming Game$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Checking Baccarat Sexy Gaming Game$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Checking Baccarat Sexy Gaming Game" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Checking EVO Game" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Evolution.feature" />
+      <option name="GLUE" value="Modules.Steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ThirdPartyAutomation" />
+      <option name="NAME_FILTER" value="^Checking EVO Game$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Checking EVO Game$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Checking EVO Game" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Checking Evolution" />
-        <item itemvalue="Cucumber Java.Scenario: Reading Excel" />
-        <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Feature: Evolution" />
+        <item itemvalue="Cucumber Java.Feature: Pragmatic" />
+        <item itemvalue="Cucumber Java.Scenario: Checking Baccarat Sexy Gaming Game" />
+        <item itemvalue="Cucumber Java.Feature: SexyGaming" />
+        <item itemvalue="Cucumber Java.Scenario: Checking EVO Game" />
       </list>
     </recent_temporary>
   </component>

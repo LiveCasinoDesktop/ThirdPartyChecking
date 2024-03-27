@@ -17,39 +17,12 @@ import io.cucumber.java.en.When;
 import java.util.List;
 
 public class Evolution extends Driver {
-    @When("I Go To SBOTOP")
-    public void iGoToSBOTOP() {
-
-        driver.get(Constants.URL);
-    }
-
-    @And("Login Account")
-    public void loginAccount() {
-
-        Waiting.element(SBOTOP.Landing.user, 10);
-        Events.sendKeys(SBOTOP.Landing.user, Constants.Accounts.IDR.username);
-
-        Waiting.element(SBOTOP.Landing.pass, 10);
-        Events.sendKeys(SBOTOP.Landing.pass, Constants.Accounts.IDR.password);
-
-        Waiting.element(SBOTOP.Landing.login, 10);
-        Events.click(SBOTOP.Landing.login);
-
-        Waiting.element(SBOTOP.Landing.accountName, 10);
-
-    }
 
     @And("Go to Evolution Casino")
     public void goToEvolutionCasino() {
 
-        Waiting.element(SBOTOP.Landing.liveCasino, 10);
-        Events.click(SBOTOP.Landing.liveCasino);
-
-        Waiting.element(SBOTOP.Casino.thirdParty, 20);
-
         Waiting.element(SBOTOP.Casino.evolution, 10);
         Events.click(SBOTOP.Casino.evolution);
-
 
         try{
 
@@ -57,7 +30,6 @@ public class Evolution extends Driver {
             Events.click(SBOTOP.Casino.redirection);
 
         }catch (Exception ignore){}
-
 
         Drivers.changeWindow();
 
@@ -115,7 +87,7 @@ public class Evolution extends Driver {
 
         System.out.println("==============================");
 
-        if(excelList != null){
+        if(!excelList.isEmpty()){
 
             System.out.println("NOT FOUND TABLE");
             for(String table : excelList){
@@ -125,7 +97,6 @@ public class Evolution extends Driver {
         }
 
     }
-
     @When("Click {string} Category")
     public void clickCategory(String category) {
 
@@ -137,6 +108,8 @@ public class Evolution extends Driver {
         };
 
         Waiting.element(component, 30);
+
+        Waiting.fewSeconds(3);
         Events.click(component);
     }
 }

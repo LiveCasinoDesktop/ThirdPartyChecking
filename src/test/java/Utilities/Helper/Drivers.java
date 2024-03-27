@@ -4,6 +4,7 @@ import Utilities.Objects.Component;
 import engine.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.Set;
@@ -33,5 +34,17 @@ public class Drivers extends Driver {
         driver.switchTo().frame(element);
 
 
+    }
+
+    public static void hoverToElement(Component component){
+
+        Actions actions = new Actions(driver);
+
+        WebElement element = driver.findElement(By.xpath(component.getPath()));
+        actions.moveToElement(element).perform();
+    }
+    public static void hoverToElement(WebElement element){
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).perform();
     }
 }

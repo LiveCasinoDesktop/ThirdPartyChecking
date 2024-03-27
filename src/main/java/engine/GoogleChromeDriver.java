@@ -3,6 +3,8 @@ package engine;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
+
 import java.util.function.Predicate;
 
 import java.io.File;
@@ -38,12 +40,13 @@ public class GoogleChromeDriver extends ChromeDriver {
 
         //chromeOptions.addArguments("--headless");
         //chromeOptions.addArguments("--auto-open-devtools-for-tabs");
-//        chromeOptions.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+        chromeOptions.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 //        chromeOptions.setCapability("ignoreZoomSetting", true);
 //        chromeOptions.setCapability("requireWindowFocus", false);
 //        chromeOptions.setCapability("enablePersistentHover", false);
         //chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
         //System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, getExecutable());
+
 
         return chromeOptions;
 

@@ -17,5 +17,5 @@ public class Constants {
         }
     }
 
-    public static String URL = "https://sbotopvn.com/";
+    public static String URL = "http://www.olahragatop.com/";
 }
