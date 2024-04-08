@@ -27,6 +27,14 @@ public class SBOTOP {
                 "//button[@id='LoginBtn']"
         );
 
+        public static Component banner = new Component(
+                "Banner",
+                "Button",
+                "Landing",
+                "//div[@class='popupBanner_content']//*[name()='svg']"
+        );
+
+
         public static Component liveCasino = new Component(
                 "Live Casino",
                 "Button",
@@ -43,6 +51,13 @@ public class SBOTOP {
     }
 
     public static class Casino{
+
+        public static Component promotionClose = new Component(
+                "More Casino",
+                "Text",
+                "Casino",
+                "//div[@class='modal_close']"
+        );
 
         public static Component thirdParty = new Component(
                 "More Casino",
@@ -107,8 +122,9 @@ public class SBOTOP {
                 "Pragmatic Navigation",
                 "Text",
                 "Casino",
-                "//a[@class='cc_cg']"
+                "//a[@class='cN_cQ']"
         );
+
 
         public static Component baccarat = new Component(
                 "Baccarat",
@@ -157,47 +173,47 @@ public class SBOTOP {
                 "Baccarat Tables",
                 "Button",
                 "Casino",
-                "//div[@class='fY_gf']//ancestor::div[2 and contains(@id, '-')]//div[@class='fY_gf']"
+                "//div[@class='fp_fy']"
         );
         public static Component baccaratTables = new Component(
                 "Baccarat Tables",
                 "Button",
                 "Casino",
-                "//div[@class='fY_gf']//ancestor::div[2 and contains(@id, '-')]//div[@class='fY_gf']"
+                "//div[@class='fp_fy' and not(normalize-space()='Baccarat Multiplay')]"
         );
         public static Component rouletteTables = new Component(
                 "Roulette Tables",
                 "Button",
                 "Casino",
-                "//ul[@id='ROULETTE']//li[contains(@class, 'lobby-roulette')]//div[@class='tableName']"
+                "//div[@class='fp_fy']"
         );
 
         public static Component showGamesTables = new Component(
                 "Show Games Tables",
                 "Button",
                 "Casino",
-                "//ul[@id='SHOWGAMES']//li[contains(@class, 'lobbyList')]//div[@class='tableName']"
+                "//div[@class='fp_fy']"
         );
 
         public static Component sicBoTables = new Component(
                 "Sic Bo Tables",
                 "Button",
                 "Casino",
-                "//ul[@id='SICBO']//li[contains(@class, 'lobbyList')]//div[@class='tableName']"
+                "//div[@class='fp_fy']"
         );
 
         public static Component dragonTigerTables = new Component(
                 "Dragon Tiger Tables",
                 "Button",
                 "Casino",
-                "//ul[@id='DRAGONTIGER']//li[contains(@class, 'lobbyList')]//div[@class='tableName']"
+                "//div[@class='fp_fy']"
         );
 
         public static Component andarBaharTables = new Component(
                 "Andar Bahar Tables",
                 "Button",
                 "Casino",
-                "//ul[@id='ANDAR_BAHAR']//li[contains(@class, 'lobbyList')]//div[@class='tableName']"
+                "//div[@class='fp_fy']"
         );
     }
 
@@ -239,11 +255,25 @@ public class SBOTOP {
 
     public static class SexyNav{
 
-        public static Component logo = new Component(
-                "Sexy Logo",
+        public static Component loading = new Component(
+                "Hall Content",
                 "Text",
                 "Landing",
-                "//h1[@id='lobby']"
+                "//div[@class='loading_text']//p[@id='loadingProg']"
+        );
+
+        public static Component halLContent = new Component(
+                "Hall Content",
+                "Text",
+                "Landing",
+                "//div[@class='hall_content']"
+        );
+
+        public static Component closeBanner = new Component(
+                "Pragmatic Banner",
+                "Text",
+                "Casino",
+                "//div[@class='close']"
         );
 
         public static class IFrame{
@@ -294,25 +324,53 @@ public class SBOTOP {
                 "//div[@id='mexicoBacTable1']//div[contains(@class, 'table_box') and not(contains(@style, 'display'))]//h5"
         );
 
+        public static Component baccaratNonMaintenance = new Component(
+                "Baccarat Tables",
+                "Table",
+                "Lobby",
+                //"//div[@id='mexicoBacTable1']//div[contains(@class, 'table_box') and not(contains(@style, 'display'))]//dt[@id='tableID']"
+                "//div[@id='mexicoBacTable1']//dt[@id='tableID']"
+        );
+
         public static Component dragonTigerTables = new Component(
                 "Dragon Tiger Tables",
                 "Table",
                 "Lobby",
-                "//div[@id='mexicoBacTable1']//div[contains(@class, 'table_box') and not(contains(@style, 'display'))]//dt[@id='tableID']"
+                "//div[@id='mexicoDraTable']//div[contains(@class, 'table_box') and not(contains(@style, 'display'))]//h5"
+        );
+        public static Component dragonTigerNonMaintenance = new Component(
+                "Dragon Tiger Tables",
+                "Table",
+                "Lobby",
+                "//div[@id='mexicoDraTable']//dt[@id='tableID']"
         );
 
         public static Component diceTables = new Component(
                 "Dice Tables",
                 "Table",
                 "Lobby",
-                "//div[@id='mexicoBacTable1']//div[contains(@class, 'table_box') and not(contains(@style, 'display'))]//dt[@id='tableID']"
+                "//div[@id='mexicoSicTable']//div[contains(@class, 'table_box') and not(contains(@style, 'display'))]//h5"
+        );
+
+        public static Component diceNonMaintenance = new Component(
+                "Dice Tables",
+                "Table",
+                "Lobby",
+                "//div[@id='mexicoSicTable']//dt[@id='tableID']"
         );
 
         public static Component rouletteTables = new Component(
                 "Roulette Tables",
                 "Table",
                 "Lobby",
-                "//div[@id='mexicoBacTable1']//div[contains(@class, 'table_box') and not(contains(@style, 'display'))]//dt[@id='tableID']"
+                "//div[@id='mexicoRouTable']//div[contains(@class, 'table_box') and not(contains(@style, 'display'))]//h5"
+        );
+
+        public static Component rouletteNonMaintenance = new Component(
+                "Dice Tables",
+                "Table",
+                "Lobby",
+                "//div[@id='mexicoRouTable']//dt[@id='tableID']"
         );
     }
 }

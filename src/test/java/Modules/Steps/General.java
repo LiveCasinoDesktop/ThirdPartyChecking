@@ -32,27 +32,35 @@ public class General extends Driver {
     @And("Login Account")
     public void loginAccount() {
 
+        Waiting.element(SBOTOP.Landing.user, 30);
+        Events.sendKeys(SBOTOP.Landing.user, Constants.Accounts.IDR.username);
+
+        Waiting.element(SBOTOP.Landing.pass, 30);
+        Events.sendKeys(SBOTOP.Landing.pass, Constants.Accounts.IDR.password);
+
+        Waiting.element(SBOTOP.Landing.login, 30);
+        Events.click(SBOTOP.Landing.login);
+
+        Waiting.element(SBOTOP.Landing.accountName, 30);
+
         try{
 
-            Waiting.element(SBOTOP.Landing.user, 30);
-            Events.sendKeys(SBOTOP.Landing.user, Constants.Accounts.IDR.username);
+            Waiting.element(SBOTOP.Landing.banner, 10);
+            Events.click(SBOTOP.Landing.banner);
 
-            Waiting.element(SBOTOP.Landing.pass, 30);
-            Events.sendKeys(SBOTOP.Landing.pass, Constants.Accounts.IDR.password);
+        }catch (Exception ignore){}
 
-            Waiting.element(SBOTOP.Landing.login, 30);
-            Events.click(SBOTOP.Landing.login);
-
-            Waiting.element(SBOTOP.Landing.accountName, 30);
+        Waiting.element(SBOTOP.Landing.liveCasino, 10);
+        Events.click(SBOTOP.Landing.liveCasino);
 
 
-            Waiting.element(SBOTOP.Landing.liveCasino, 10);
-            Events.click(SBOTOP.Landing.liveCasino);
+        try{
+            Waiting.element(SBOTOP.Casino.promotionClose, 30);
+            Events.click(SBOTOP.Casino.promotionClose);
 
-            Waiting.element(SBOTOP.Casino.thirdParty, 20);
-        }catch (Exception e){
-            loginAccount();
-        }
+        }catch (Exception ignore){}
+
+        Waiting.element(SBOTOP.Casino.thirdParty, 20);
 
     }
     @When("I Join {string} Casino")
@@ -100,8 +108,18 @@ public class General extends Driver {
         }
         else if(thirdParty.equals("Sexy")){
 
+            try{
+
+                Waiting.element(Sexy.IFrame.gameHall, 20);
+            }catch (Exception e){
+
+                Drivers.refresh();
+                Waiting.element(Sexy.IFrame.gameHall, 60);
+            }
+
             System.out.println("Changing iFrame...");
             Drivers.changeIFrame(Sexy.IFrame.gameHall);
+
         }
 
 
@@ -157,6 +175,7 @@ public class General extends Driver {
         }
         else if(thirdParty.equals("Sexy")){
 
+
             SexyMethods.clickNavigator(category);
             SexyMethods.verify(category);
 
@@ -205,9 +224,5 @@ public class General extends Driver {
                 }
             }
         }
-
-
-
-
     }
 }

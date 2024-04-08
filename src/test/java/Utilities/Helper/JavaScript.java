@@ -35,4 +35,17 @@ public class JavaScript extends Driver {
         js.executeScript("arguments[0].scrollIntoView(true);", element);
 
     }
+
+    public static void click(Component component){
+
+        WebElement element = driver.findElement(By.xpath(component.getPath()));
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", element);
+    }
+
+    public static void click(WebElement element){
+
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", element);
+    }
 }

@@ -2,6 +2,7 @@ package Modules.Steps.featureSteps;
 
 import Modules.Pages.EvolutionComponents;
 import Modules.Pages.SBOTOP;
+import Utilities.Helper.Drivers;
 import Utilities.Helper.JavaScript;
 import Utilities.Helper.Waiting;
 import Utilities.Listeners.Events;
@@ -9,6 +10,7 @@ import Utilities.Objects.Component;
 import engine.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +20,16 @@ public class SexyMethods extends Driver {
 
     public static void clickNavigator(String category){
 
-        Waiting.element(SBOTOP.Navigation.logo, 30);
+        try{
+
+            JavaScript.click(SBOTOP.SexyNav.closeBanner);
+            //Events.click(SBOTOP.SexyNav.closeBanner);
+            Waiting.fewSeconds(3);
+
+
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
 
         Component component = switch (category) {
             case "Baccarat" -> SBOTOP.SexyNav.Navigation.baccarat;
@@ -27,19 +38,27 @@ public class SexyMethods extends Driver {
             default -> SBOTOP.SexyNav.Navigation.roulette;
         };
 
-        Waiting.element(component, 30);
+        try{
+            Waiting.element(component, 30);
+
+        }catch (Exception e){
+            Drivers.refresh();
+            Waiting.element(component, 30);
+        }
 
         Waiting.fewSeconds(3);
-        Events.click(component);
+        JavaScript.click(component);
 
     }
 
     public static void verify(String category) {
-        Waiting.element(EvolutionComponents.activeNav, 30);
 
+        System.out.println("====================================================");
+        System.out.println("=================== VERIFICATION ===================");
+        System.out.println("====================================================");
         Waiting.fewSeconds(5);
 
-        Component tablesComponent;
+        Component tablesComponent, nonMaintenance;
 
         switch (category){
 
@@ -50,19 +69,48 @@ public class SexyMethods extends Driver {
 
         }
 
+        switch (category){
+
+            case "Baccarat" -> nonMaintenance = SBOTOP.SexyNav.baccaratNonMaintenance;
+            case "Dragon Tiger" -> nonMaintenance = SBOTOP.SexyNav.dragonTigerNonMaintenance;
+            case "Dice" -> nonMaintenance = SBOTOP.SexyNav.diceNonMaintenance;
+            default -> nonMaintenance = SBOTOP.SexyNav.rouletteNonMaintenance;
+        }
+
         tableList = new ArrayList<>();
         List<WebElement> tables = driver.findElements(By.xpath(tablesComponent.getPath()));
+        List<WebElement> nonMaintenanceTables = driver.findElements(By.xpath(nonMaintenance.getPath()));
 
+        String tableName;
+
+        for(WebElement element : nonMaintenanceTables){
+
+            JavaScript.scrollTo(element);
+            tableName = element.getText();
+
+            if(!tableName.isEmpty()){
+
+                tableList.add(element.getText());
+            }
+        }
         for(WebElement element : tables){
 
             JavaScript.scrollTo(element);
-            tableList.add(element.getText());
+            tableName = element.getText();
+            if(!tableName.isEmpty()){
+
+                tableList.add(element.getText());
+            }
         }
 
         System.out.println("===========");
         System.out.println(tableList.size());
         System.out.println("==============================");
 
+        for(String element : tableList){
+
+            System.out.println(element);
+        }
     }
 
 }

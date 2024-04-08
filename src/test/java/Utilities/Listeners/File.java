@@ -120,7 +120,7 @@ public class File {
                 default -> columnLocator = 3;
             }
         }
-        else{
+        else if(thirdParty.equals("Pragmatic")){
             switch (category){
 
                 case "Baccarat" -> columnLocator = 0;
@@ -129,6 +129,14 @@ public class File {
                 case "Sic Bo" -> columnLocator = 3;
                 case "Dragon Tiger" -> columnLocator = 4;
                 default -> columnLocator = 5;
+            }
+        }
+        else{
+            switch (category){
+                case "Baccarat" -> columnLocator = 0;
+                case "Dragon Tiger" -> columnLocator = 1;
+                case "Dice" -> columnLocator = 2;
+                default -> columnLocator = 3;
             }
         }
         return columnLocator;

@@ -3,6 +3,7 @@ package Utilities.Helper;
 import Utilities.Objects.Component;
 import engine.Driver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -20,8 +21,14 @@ public class Waiting extends Driver {
 
     public static void element(Component component, int seconds){
 
-        wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(component.getPath())));
+        try{
+            wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(component.getPath())));
+
+        }catch (TimeoutException e){
+
+            throw e;
+        }
 
     }
 

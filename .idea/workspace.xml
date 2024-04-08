@@ -5,25 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b97d22c-569b-4065-a5db-682945c2de9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Pages/Sexy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Pragmatic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/EvolutionMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/PragmaticMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/SexyMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/Evolution.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/Pragmatic.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/SexyGaming.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Pages/SBOTOP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Pages/SBOTOP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/PragmaticMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/PragmaticMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/SexyMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/SexyMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Helper/Drivers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Helper/Drivers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Helper/JavaScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Helper/JavaScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Helper/Waiting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Helper/Waiting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/File.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Settings/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Settings/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Evolution.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Excel/tableList.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Excel/tableList.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/SexyGaming.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/SexyGaming.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output" beforeDir="false" afterPath="$PROJECT_DIR$/test-output" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +53,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/kar.par/Documents/GitHub/DomainAutomation",
+    "last_opened_file_path": "C:/Users/kar.par/Documents/GitHub/MavenLiveBaccarat",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
@@ -79,7 +75,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Evolution">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Checking Roulette Sexy Gaming Game">
     <configuration name="Feature: Evolution" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Evolution.feature" />
@@ -88,25 +84,6 @@
       <module name="ThirdPartyAutomation" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: Evolution" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: Pragmatic" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Pragmatic.feature" />
-      <option name="GLUE" value="Modules.Steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="ThirdPartyAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Pragmatic" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -137,15 +114,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Checking Baccarat Sexy Gaming Game" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Checking Dice Sexy Gaming Game" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/SexyGaming.feature" />
       <option name="GLUE" value="Modules.Steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ThirdPartyAutomation" />
-      <option name="NAME_FILTER" value="^Checking Baccarat Sexy Gaming Game$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Checking Baccarat Sexy Gaming Game$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Checking Baccarat Sexy Gaming Game" />
+      <option name="NAME_FILTER" value="^Checking Dice Sexy Gaming Game$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Checking Dice Sexy Gaming Game$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Checking Dice Sexy Gaming Game" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -157,15 +134,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Checking EVO Game" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Checking Roulette Sexy Gaming Game" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Evolution.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/SexyGaming.feature" />
       <option name="GLUE" value="Modules.Steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ThirdPartyAutomation" />
-      <option name="NAME_FILTER" value="^Checking EVO Game$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Checking EVO Game$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Checking EVO Game" />
+      <option name="NAME_FILTER" value="^Checking Roulette Sexy Gaming Game$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Checking Roulette Sexy Gaming Game$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Checking Roulette Sexy Gaming Game" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -173,17 +150,26 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ThirdPartyAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Runner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: Evolution" />
-        <item itemvalue="Cucumber Java.Feature: Pragmatic" />
-        <item itemvalue="Cucumber Java.Scenario: Checking Baccarat Sexy Gaming Game" />
+        <item itemvalue="Cucumber Java.Scenario: Checking Roulette Sexy Gaming Game" />
+        <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Scenario: Checking Dice Sexy Gaming Game" />
         <item itemvalue="Cucumber Java.Feature: SexyGaming" />
-        <item itemvalue="Cucumber Java.Scenario: Checking EVO Game" />
+        <item itemvalue="Cucumber Java.Feature: Evolution" />
       </list>
     </recent_temporary>
   </component>

@@ -47,4 +47,8 @@ public class Drivers extends Driver {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).perform();
     }
+
+    public static void refresh(){
+        driver.navigate().refresh();
+    }
 }

@@ -17,6 +17,7 @@ import java.util.List;
 public class PragmaticMethods extends Driver {
 
     public static List<String> tableList;
+    public static Component tablePath;
 
     public static void clickNavigator(String category){
 
@@ -25,12 +26,30 @@ public class PragmaticMethods extends Driver {
         Component tablesComponent;
 
         switch (category){
-            case "Baccarat" -> tablesComponent = SBOTOP.PragmaticNav.baccarat;
-            case "Roulette" -> tablesComponent = SBOTOP.PragmaticNav.roulette;
-            case "Game Shows" -> tablesComponent = SBOTOP.PragmaticNav.gameShows;
-            case "Sic Bo" -> tablesComponent = SBOTOP.PragmaticNav.sicBo;
-            case "Dragon Tiger" -> tablesComponent = SBOTOP.PragmaticNav.dragonTiger;
-            default -> tablesComponent = SBOTOP.PragmaticNav.andarBahar;
+            case "Baccarat" -> {
+                tablesComponent = SBOTOP.PragmaticNav.baccarat;
+                tablePath = SBOTOP.PragmaticNav.baccaratTables;
+            }
+            case "Roulette" -> {
+                tablesComponent = SBOTOP.PragmaticNav.roulette;
+                tablePath = SBOTOP.PragmaticNav.rouletteTables;
+            }
+            case "Game Shows" -> {
+                tablesComponent = SBOTOP.PragmaticNav.gameShows;
+                tablePath = SBOTOP.PragmaticNav.showGamesTables;
+            }
+            case "Sic Bo" -> {
+                tablesComponent = SBOTOP.PragmaticNav.sicBo;
+                tablePath = SBOTOP.PragmaticNav.sicBoTables;
+            }
+            case "Dragon Tiger" -> {
+                tablesComponent = SBOTOP.PragmaticNav.dragonTiger;
+                tablePath = SBOTOP.PragmaticNav.dragonTigerTables;
+            }
+            default -> {
+                tablesComponent = SBOTOP.PragmaticNav.andarBahar;
+                tablePath = SBOTOP.PragmaticNav.andarBaharTables;
+            }
         }
 
         Events.click(tablesComponent);
@@ -43,7 +62,7 @@ public class PragmaticMethods extends Driver {
         Waiting.fewSeconds(3);
 
         tableList = new ArrayList<>();
-        List<WebElement> tables = driver.findElements(By.xpath(SBOTOP.PragmaticNav.tables.getPath()));
+        List<WebElement> tables = driver.findElements(By.xpath(tablePath.getPath()));
 
         for(WebElement element : tables){
 
