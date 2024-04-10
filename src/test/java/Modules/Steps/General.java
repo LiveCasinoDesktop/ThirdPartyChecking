@@ -9,7 +9,7 @@ import Modules.Steps.featureSteps.SexyMethods;
 import Utilities.Helper.Drivers;
 import Utilities.Helper.Waiting;
 import Utilities.Listeners.Events;
-import Utilities.Listeners.File;
+import Utilities.Listeners.FileEvent;
 import Utilities.Objects.Component;
 import Utilities.Settings.Constants;
 import engine.Driver;
@@ -18,20 +18,25 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class General extends Driver {
 
-    List<String> tableList;
+    Component thirdPartyComponent, componentButton;
+    List<String> tableList, lobbyList, fileList;
+    String product;
+
+    String timeStamp;
     @When("I Go To SBOTOP")
     public void iGoToSBOTOP() {
 
         driver.get(Constants.URL);
     }
-
     @And("Login Account")
     public void loginAccount() {
 
+        Waiting.fewSeconds(3);
         Waiting.element(SBOTOP.Landing.user, 30);
         Events.sendKeys(SBOTOP.Landing.user, Constants.Accounts.IDR.username);
 
@@ -66,7 +71,6 @@ public class General extends Driver {
     @When("I Join {string} Casino")
     public void iJoinCasino(String thirdParty) {
 
-        Component thirdPartyComponent, componentButton;
         if(thirdParty.equals("Evolution")){
 
             thirdPartyComponent = SBOTOP.Casino.evolution;
@@ -84,11 +88,7 @@ public class General extends Driver {
 
         Waiting.fewSeconds(3);
 
-        Waiting.element(thirdPartyComponent, 10);
-
-        Drivers.hoverToElement(thirdPartyComponent);
-        Waiting.fewSeconds(3);
-        Events.click(componentButton);
+        clickThirdParty();
 
         try{
 
@@ -114,7 +114,16 @@ public class General extends Driver {
             }catch (Exception e){
 
                 Drivers.refresh();
-                Waiting.element(Sexy.IFrame.gameHall, 60);
+
+                try{
+                    Waiting.element(Sexy.IFrame.gameHall, 30);
+                }catch (Exception f){
+
+                    driver.close();
+                    Drivers.selectOriginalWindow();
+                    clickThirdParty();
+                    Waiting.element(Sexy.IFrame.gameHall, 20);
+                }
             }
 
             System.out.println("Changing iFrame...");
@@ -127,8 +136,8 @@ public class General extends Driver {
     @When("Get All Table Names of {string} of {string}")
     public void getAllTableNamesOfOf(String category, String thirdParty) throws IOException {
 
-        File.readExcel(category, thirdParty);
-        tableList = File.gameList;
+        FileEvent.readExcel(category, thirdParty);
+        tableList = FileEvent.gameList;
 
         System.out.println("===============");
         System.out.println("Excel File Table List");
@@ -147,7 +156,22 @@ public class General extends Driver {
     @Then("Verify {string} of {string}")
     public void verifyOf(String category, String thirdParty) throws IOException {
 
+        timeStamp = Events.FORMATTER.timeFormat();
+
+        lobbyList = new ArrayList<>();
+        fileList = new ArrayList<>();
+
         if(thirdParty.equals("Pragmatic")){
+
+            switch (category){
+
+                case "Baccarat" -> product = "BC";
+                case "Roulette" -> product = "RL";
+                case "Game Shows" -> product = "GS";
+                case "Sic Bo" -> product = "SB";
+                case "Dragon Tiger" -> product = "DT";
+                default -> product = "AB";
+            }
 
             PragmaticMethods.clickNavigator(category);
             PragmaticMethods.verify(category);
@@ -159,6 +183,7 @@ public class General extends Driver {
                 if(!tableList.contains(table)){
 
                     System.out.println("Excel List have no: " + table);
+                    fileList.add(table);
                 }
             }
             System.out.println("=======================");
@@ -169,12 +194,20 @@ public class General extends Driver {
                 if(!PragmaticMethods.tableList.contains(table)){
 
                     System.out.println("Game Lobby have no: " + table);
+                    lobbyList.add(table);
                 }
             }
 
         }
         else if(thirdParty.equals("Sexy")){
 
+            switch (category){
+
+                case "Baccarat" -> product = "BC";
+                case "Dragon Tiger" -> product = "DT";
+                case "Dice" -> product = "DC";
+                default -> product = "RL";
+            }
 
             SexyMethods.clickNavigator(category);
             SexyMethods.verify(category);
@@ -186,6 +219,7 @@ public class General extends Driver {
                 if(!tableList.contains(table)){
 
                     System.out.println("Excel List have no: " + table);
+                    fileList.add(table);
                 }
             }
             System.out.println("=======================");
@@ -196,10 +230,19 @@ public class General extends Driver {
                 if(!SexyMethods.tableList.contains(table)){
 
                     System.out.println("Game Lobby have no: " + table);
+                    lobbyList.add(table);
                 }
             }
         }
         else{
+
+            switch (category){
+
+                case "Baccarat & Sic Bo" -> product = "BS";
+                case "Roulette" -> product = "RL";
+                case "Poker" -> product = "PK";
+                default -> product = "GS";
+            }
 
             EvolutionMethods.clickNavigator(category);
             EvolutionMethods.verify(category);
@@ -211,6 +254,7 @@ public class General extends Driver {
                 if(!tableList.contains(table)){
 
                     System.out.println("Excel List have no: " + table);
+                    fileList.add(table);
                 }
             }
 
@@ -221,8 +265,24 @@ public class General extends Driver {
                 if(!EvolutionMethods.tableList.contains(table)){
 
                     System.out.println("Game Lobby have no: " + table);
+                    lobbyList.add(table);
                 }
             }
         }
+    }
+    @And("Print Text File {string}")
+    public void printTextFile(String provider) {
+
+        FileEvent.generateFile(provider, product, fileList, lobbyList, timeStamp);
+    }
+
+
+    private void clickThirdParty(){
+
+        Waiting.element(thirdPartyComponent, 10);
+
+        Drivers.hoverToElement(thirdPartyComponent);
+        Waiting.fewSeconds(3);
+        Events.click(componentButton);
     }
 }

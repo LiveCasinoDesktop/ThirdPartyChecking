@@ -28,6 +28,11 @@ public class Drivers extends Driver {
             throw e;
         }
     }
+
+    public static void selectOriginalWindow(){
+        driver.switchTo().window(originalWindowHandle);
+    }
+
     public static void changeIFrame(Component component){
 
         WebElement element = driver.findElement(By.xpath(component.getPath()));

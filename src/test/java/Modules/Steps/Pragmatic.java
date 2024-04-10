@@ -1,12 +1,11 @@
 package Modules.Steps;
 
-import Modules.Pages.EvolutionComponents;
 import Modules.Pages.SBOTOP;
 import Utilities.Helper.Drivers;
 import Utilities.Helper.JavaScript;
 import Utilities.Helper.Waiting;
 import Utilities.Listeners.Events;
-import Utilities.Listeners.File;
+import Utilities.Listeners.FileEvent;
 import Utilities.Objects.Component;
 import engine.Driver;
 import io.cucumber.java.en.And;
@@ -18,7 +17,6 @@ import org.openqa.selenium.WebElement;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Pragmatic extends Driver {
     @And("Go to Pragmatic Casino")
@@ -96,9 +94,9 @@ public class Pragmatic extends Driver {
         System.out.println(tableList.size());
         System.out.println("==============================");
 
-        File.readExcelFile(game, "Pragmatic");
+        FileEvent.readExcelFile(game, "Pragmatic");
 
-        List<String> excelList = File.gameList;
+        List<String> excelList = FileEvent.gameList;
 
         for(String excel : excelList){
 

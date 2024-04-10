@@ -23,13 +23,12 @@ public class SexyMethods extends Driver {
         try{
 
             JavaScript.click(SBOTOP.SexyNav.closeBanner);
-            //Events.click(SBOTOP.SexyNav.closeBanner);
-            Waiting.fewSeconds(3);
-
-
         }catch (Exception e){
-            System.out.println(e.getMessage());
+
+            Drivers.refresh();
+            JavaScript.click(SBOTOP.SexyNav.closeBanner);
         }
+        Waiting.fewSeconds(3);
 
         Component component = switch (category) {
             case "Baccarat" -> SBOTOP.SexyNav.Navigation.baccarat;

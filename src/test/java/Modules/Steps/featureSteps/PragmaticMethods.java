@@ -4,7 +4,7 @@ import Modules.Pages.SBOTOP;
 import Utilities.Helper.JavaScript;
 import Utilities.Helper.Waiting;
 import Utilities.Listeners.Events;
-import Utilities.Listeners.File;
+import Utilities.Listeners.FileEvent;
 import Utilities.Objects.Component;
 import engine.Driver;
 import org.openqa.selenium.By;
@@ -74,7 +74,7 @@ public class PragmaticMethods extends Driver {
         System.out.println(tableList.size());
         System.out.println("==============================");
 
-        File.readExcel(category, "Pragmatic");
+        FileEvent.readExcel(category, "Pragmatic");
 
 
     }

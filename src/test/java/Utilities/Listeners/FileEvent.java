@@ -4,12 +4,14 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class File {
+public class FileEvent {
 
     public static List<String> gameList;
 
@@ -140,5 +142,76 @@ public class File {
             }
         }
         return columnLocator;
+    }
+
+
+
+    // * ===============================
+    // * ===============================
+    // * ===============================
+    // * ===============================
+
+    public static void generateFile(String provider, String product, List<String> fileList, List<String> lobbyList, String timeStamp){
+
+        try {
+            String formattedDate = Events.FORMATTER.dateFormat();
+
+            String path = "listFile/"+formattedDate+"/";
+
+            File fPath = new File(path);
+
+            if (!fPath.exists()) {
+                fPath.mkdir();
+            }
+
+            FileWriter file = new FileWriter(path +provider + "_" + product + ".txt");
+
+            file.write("Provider: " + provider + "\n");
+            file.write("Product: " + product + "\n");
+            file.write("Date: " + formattedDate + "\n");
+            file.write("Time Started: " + timeStamp + "\n\n\n");
+
+            if(!fileList.isEmpty()){
+
+                file.write("File List: Excel File List Has No...\n");
+                for(String fileStr : fileList){
+
+                    System.out.println("Table: " + fileStr);
+
+                    file.write(fileStr+"\n");
+                }
+                file.write("\n\n\n");
+            }
+            else{
+
+                file.write("File List: No Issue\n\n");
+
+            }
+
+            if(!lobbyList.isEmpty()){
+
+                file.write("Lobby List: Game Lobby Has No...\n");
+                for(String lobbyStr : lobbyList){
+
+                    System.out.println("Table: " + lobbyStr);
+
+                    file.write(lobbyStr+"\n");
+                }
+            }
+            else{
+
+                file.write("Lobby List: No Issue");
+
+            }
+
+            file.close();
+            System.out.println("Successfully wrote to the file.");
+
+        } catch (IOException e) {
+
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+
     }
 }
