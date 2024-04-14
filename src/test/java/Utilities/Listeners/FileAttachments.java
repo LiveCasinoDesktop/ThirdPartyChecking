@@ -16,7 +16,7 @@ public class FileAttachments {
         currDate = Events.FORMATTER.dateFormat();
 
         System.out.println("Current Date: " + currDate);
-        String date = "listFile/" + currDate + "/";
+        String date = "reports/excel/" + currDate + "/";
         System.out.println("Path: " + date);
 
         List<String> textFiles = listFiles(date);
@@ -33,7 +33,7 @@ public class FileAttachments {
         return textFileList;
     }
 
-    public static List<String> listFiles(String directoryPath){
+    private static List<String> listFiles(String directoryPath){
 
         List<String> textFiles = new ArrayList<>();
 
@@ -54,9 +54,9 @@ public class FileAttachments {
         return textFiles;
     }
 
-    public static boolean isTextFile(File file) {
+    private static boolean isTextFile(File file) {
         // Define the allowed image file extensions
-        String[] allowedExtensions = {".txt"};
+        String[] allowedExtensions = {".xls"};
 
         // Check if the file has one of the allowed extensions
         return Arrays.stream(allowedExtensions).anyMatch(ext -> file.getName().toLowerCase().endsWith(ext));

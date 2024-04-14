@@ -5,36 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b97d22c-569b-4065-a5db-682945c2de9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/SexyGaming.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/Helper/JsonFormatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/FileAttachments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/JsonGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/Priority2/SendFile.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listFile/10-Apr-24/Sexy_BC.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listFile/10-Apr-24/Sexy_DC.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listFile/10-Apr-24/Sexy_DT.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listFile/10-Apr-24/Sexy_RL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Pages/EvolutionComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Pages/EvolutionComponents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Pages/Pragmatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Pages/Pragmatic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/Pragmatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Pragmatic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/EvolutionMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/EvolutionMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/PragmaticMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/PragmaticMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/SexyMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/SexyMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Helper/JavaScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Helper/JavaScript.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/FileEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/FileEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Settings/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Settings/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Excel/tableList.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Excel/tableList.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/Evolution.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/Priority1/Evolution.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/Pragmatic.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/Priority1/Pragmatic.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/SexyGaming.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/Priority1/SexyGaming.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output" beforeDir="false" afterPath="$PROJECT_DIR$/test-output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/FileAttachments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/FileAttachments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/Priority2/SendFile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/Priority2/SendFile.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,27 +64,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Checking Sexy Gaming All Games">
-    <configuration name="Scenario: Checking EVO Game Roulette" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Priority1/Evolution.feature" />
-      <option name="GLUE" value="Modules.Steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="ThirdPartyAutomation" />
-      <option name="NAME_FILTER" value="^Checking EVO Game Roulette$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Checking EVO Game Roulette$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Checking EVO Game Roulette" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cucumber Java.Scenario: Send Email">
     <configuration name="Scenario: Checking Evolution All Games (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Priority1/SexyGaming.feature" />
@@ -193,13 +145,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: Send Email" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Priority2/SendFile.feature" />
+      <option name="GLUE" value="Modules.Steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ThirdPartyAutomation" />
+      <option name="NAME_FILTER" value="^Send Email$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Send Email$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Send Email" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Send Email" />
         <item itemvalue="Cucumber Java.Scenario: Checking Sexy Gaming All Games" />
         <item itemvalue="Cucumber Java.Scenario: Checking Evolution All Games (1)" />
         <item itemvalue="Cucumber Java.Scenario: Checking Pragmatic All Games" />
         <item itemvalue="Cucumber Java.Scenario: Checking Evolution All Games" />
-        <item itemvalue="Cucumber Java.Scenario: Checking EVO Game Roulette" />
       </list>
     </recent_temporary>
   </component>
