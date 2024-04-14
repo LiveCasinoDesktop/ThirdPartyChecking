@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
                 dryRun = false,
                 features = "src/test/resources",
                 glue = "Modules/Steps"
-                //tags = "@SexyGaming"
+                //tags = "@"
         )
 
 public class Runner {

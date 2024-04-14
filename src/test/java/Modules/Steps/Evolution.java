@@ -1,114 +1,136 @@
 package Modules.Steps;
 
 import Modules.Pages.EvolutionComponents;
-import Modules.Pages.SBOTOP;
-import Utilities.Helper.Drivers;
-import Utilities.Helper.JavaScript;
+import Modules.Steps.featureSteps.EvolutionMethods;
+import Utilities.Helper.JsonFormatter;
 import Utilities.Helper.Waiting;
 import Utilities.Listeners.Events;
 import Utilities.Listeners.FileEvent;
 import Utilities.Objects.Component;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import engine.Driver;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 
-import java.util.List;
+import java.io.IOException;
+import java.util.*;
 
 public class Evolution extends Driver {
 
-    @And("Go to Evolution Casino")
-    public void goToEvolutionCasino() {
+    List<Map<String, Object>> information = new ArrayList<>();
+    public String product, provider;
+    List<String> tableList, lobbyList, fileList;
+    @And("Get All {string} Tables of Evolution")
+    public void getAllTablesOfEvolution(String category) throws IOException {
 
-        Waiting.element(SBOTOP.Casino.evolution, 10);
-        Events.click(SBOTOP.Casino.evolution);
+        provider = "Evolution";
+        String activeCategory = Events.getText(EvolutionComponents.navigation);
 
-        try{
+        Component component = switch (category){
 
-            Waiting.element(SBOTOP.Casino.redirection, 10);
-            Events.click(SBOTOP.Casino.redirection);
+            case "Roulette" -> EvolutionComponents.Navigation.roulette;
+            case "Baccarat & Sic Bo" -> EvolutionComponents.Navigation.baccarat_SicBo;
+            case "Poker" -> EvolutionComponents.Navigation.poker;
+            default -> EvolutionComponents.Navigation.gameShows;
 
-        }catch (Exception ignore){}
-
-        Drivers.changeWindow();
-
-        Waiting.fewSeconds(5);
-        System.out.println(driver.getTitle());
-
-        System.out.println("Changing iFrame...");
-        Drivers.changeIFrame(EvolutionComponents.iframe);
-    }
-
-    @Then("Verify {string} Tables")
-    public void verifyTables(String thirdParty) throws Exception {
-
-        Waiting.element(EvolutionComponents.activeNav, 30);
-        Thread.sleep(5000);
-        String activeNav = Events.getText(EvolutionComponents.activeNav);
-        System.out.println(activeNav);
-
-        Component tablesComponent;
-        switch (activeNav){
-
-            case "Roulette" -> tablesComponent = EvolutionComponents.Roulette.rouletteTables;
-            case "Poker" -> tablesComponent = EvolutionComponents.Poker.pokerTables;
-            case "Game Shows" -> tablesComponent = EvolutionComponents.GameShows.gameShows;
-            default -> tablesComponent = EvolutionComponents.Baccarat_SicBo.baccaratTables;
-
-        }
-
-        FileEvent.readExcelFile(activeNav, thirdParty);
-
-        Waiting.fewSeconds(5);
-
-        // * GETTING SIZE OF TABLES
-
-        int size = Events.getSize(tablesComponent);
-        JavaScript.scrollTo(tablesComponent, size);
-
-        Waiting.fewSeconds(3);
-
-        List<String> tableList = Events.getListText(tablesComponent);
-        List<String> excelList = FileEvent.gameList;
-
-        for(String table : tableList){
-
-            if(!excelList.contains(table)){
-
-                System.out.println("Table not FOUND: " + table);
-            }
-            else{
-
-                excelList.remove(table);
-            }
-
-        }
-
-        System.out.println("==============================");
-
-        if(!excelList.isEmpty()){
-
-            System.out.println("NOT FOUND TABLE");
-            for(String table : excelList){
-
-                System.out.println(table);
-            }
-        }
-
-    }
-    @When("Click {string} Category")
-    public void clickCategory(String category) {
-
-        Component component = switch (category) {
-            case "Baccarat & Sic Bo" -> SBOTOP.Navigation.baccarat_SicBo;
-            case "Poker" -> SBOTOP.Navigation.poker;
-            case "Game Shows" -> SBOTOP.Navigation.gameShows;
-            default -> SBOTOP.Navigation.roulette;
         };
 
-        Waiting.element(component, 30);
+        if(!activeCategory.equals(category)){
 
-        Waiting.fewSeconds(3);
-        Events.click(component);
+            Waiting.fewSeconds(2);
+            Events.click(EvolutionComponents.logo);
+
+            Waiting.fewSeconds(2);
+            Events.click(EvolutionComponents.games);
+
+            Waiting.fewSeconds(2);
+            Events.click(component);
+        }
+
+        FileEvent.readExcel(category, provider);
+        tableList = FileEvent.gameList;
+
+        System.out.println("===============");
+        System.out.println("Excel File Table List");
+        System.out.println("Table Size: " + tableList.size());
+        System.out.println("===============");
+        for(String table : tableList){
+
+            System.out.println(table);
+        }
+        System.out.println("============================================================");
+        System.out.println("============================================================");
+
+    }
+
+    @And("Verify {string} of Evolution")
+    public void verifyOfEvolution(String category) throws IOException {
+
+        fileList = new ArrayList<>();
+        lobbyList = new ArrayList<>();
+
+        switch (category){
+
+            case "Baccarat & Sic Bo" -> product = "Baccarat & Sic Bo";
+            case "Roulette" -> product = "Roulette";
+            case "Poker" -> product = "Poker";
+            default -> product = "Game Shows";
+        }
+
+        EvolutionMethods.verify(category);
+
+        System.out.println("=======================");
+        System.out.println("Left Join Verification");
+        for(String table : EvolutionMethods.tableList){
+
+            if(!tableList.contains(table)){
+
+                System.out.println("Excel List have no: " + table);
+                fileList.add(table);
+            }
+        }
+
+        System.out.println("=======================");
+        System.out.println("Right Join Verification");
+        for(String table : tableList){
+
+            if(!EvolutionMethods.tableList.contains(table)){
+
+                System.out.println("Game Lobby have no: " + table);
+                lobbyList.add(table);
+            }
+        }
+
+        createJSON();
+
+    }
+
+
+    private void createJSON() throws IOException {
+
+        System.out.println("================================");
+        System.out.println("================================");
+        System.out.println("================================");
+
+
+
+        //Map<String, Object> existing = information(fileName);
+
+        Map<String, Object> data = new LinkedHashMap<>();
+        data.put("category", product);
+        data.put("fileList", fileList);
+        data.put("lobbyList", lobbyList);
+        ObjectMapper mapper = new ObjectMapper();
+        String jsonData = mapper.writeValueAsString(data);
+        System.out.println(jsonData);
+        System.out.println("================================");
+        System.out.println("================================");
+        System.out.println("================================");
+
+        information.add(data);
+
+    }
+    @And("Display JSON {string}")
+    public void displayJSON(String provider) throws IOException {
+        JsonFormatter.generate(information, provider);
     }
 }

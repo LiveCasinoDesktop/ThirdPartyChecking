@@ -6,199 +6,101 @@ public class Pragmatic {
 
     public static class Navigation{
 
-        public static Component baccarat = new Component(
-                "Baccarat",
+        public static Component logo = new Component(
+                "Logo",
                 "Navigation",
                 "Pragmatic",
-                "//li[contains(@class, 'BACCARAT')]"
+                "//a[@class='bT_bW']"
+        );
+
+        public static Component active = new Component(
+                "Active",
+                "Navigation",
+                "Pragmatic",
+                "//a[contains(@class, 'active')]"
+        );
+
+
+        public static Component baccarat = new Component(
+                "Baccarat",
+                "Button",
+                "Casino",
+                "//span[normalize-space()='Baccarat']//ancestor::a"
         );
 
         public static Component roulette = new Component(
                 "Roulette",
-                "Navigation",
-                "Pragmatic",
-                "//li[contains(@class, 'ROULETTE')]"
+                "Button",
+                "Casino",
+                "//span[normalize-space()='Roulette']//ancestor::a"
         );
 
-        public static Component showGames = new Component(
+        public static Component gameShows = new Component(
                 "Game Shows",
-                "Navigation",
-                "Pragmatic",
-                "//li[contains(@class, 'SHOWGAMES')]"
+                "Button",
+                "Casino",
+                "//span[normalize-space()='Game Shows']//ancestor::a"
         );
 
-        public static Component sicbo = new Component(
+        public static Component sicBo = new Component(
                 "Sic Bo",
-                "Navigation",
-                "Pragmatic",
-                "//li[contains(@class, 'SICBO')]"
+                "Button",
+                "Casino",
+                "//span[normalize-space()='Sic Bo']//ancestor::a"
         );
 
         public static Component dragonTiger = new Component(
                 "Dragon Tiger",
-                "Navigation",
-                "Pragmatic",
-                "//li[contains(@class, 'DRAGONTIGER')]"
+                "Button",
+                "Casino",
+                "//span[normalize-space()='Dragon Tiger']//ancestor::a"
         );
 
         public static Component andarBahar = new Component(
                 "Andar Bahar",
-                "Navigation",
-                "Pragmatic",
-                "//li[contains(@class, 'ANDAR_BAHAR')]"
+                "Button",
+                "Casino",
+                "//span[normalize-space()='Andar Bahar']//ancestor::a"
         );
     }
+    public static Component baccaratTables = new Component(
+            "Baccarat Tables",
+            "Button",
+            "Casino",
+            "//div[@class='fp_fy' and not(normalize-space()='Baccarat Multiplay')]"
+    );
+    public static Component rouletteTables = new Component(
+            "Roulette Tables",
+            "Button",
+            "Casino",
+            "//div[@class='fp_fy']"
+    );
 
-    public static class Baccarat{
+    public static Component showGamesTables = new Component(
+            "Show Games Tables",
+            "Button",
+            "Casino",
+            "//div[@class='fp_fy']"
+    );
 
-        public static Component speedBaccarat = new Component(
-                "Speed Baccarat",
-                "Table",
-                "Pragmatic",
-                "//div[contains(@title, 'Speed')]//ancestor::li"
-        );
+    public static Component sicBoTables = new Component(
+            "Sic Bo Tables",
+            "Button",
+            "Casino",
+            "//div[@class='fp_fy']"
+    );
 
-        public static Component FortuneBaccarat = new Component(
-                "Speed Baccarat",
-                "Table",
-                "Pragmatic",
-                "//div[contains(@title, 'Fortune')]//ancestor::li"
-        );
+    public static Component dragonTigerTables = new Component(
+            "Dragon Tiger Tables",
+            "Button",
+            "Casino",
+            "//div[@class='fp_fy']"
+    );
 
-        public static Component Super8Baccarat = new Component(
-                "Speed Baccarat",
-                "Table",
-                "Pragmatic",
-                "//div[contains(@title, 'Super 8')]//ancestor::li"
-        );
-
-        public static Component baccarat = new Component(
-                "Speed Baccarat",
-                "Table",
-                "Pragmatic",
-                "//div[not(contains(@title, 'Speed') or contains(@title, 'Fortune') or contains(@title, 'Super 8')) and contains(@title, 'Baccarat')]//ancestor::li"
-        );
-
-    }
-
-    public static class Roulette{
-
-        public static Component megaRoulette = new Component(
-                "Mega Roulette",
-                "Roulette",
-                "Pragmatic",
-                "//div[contains(@title, 'Mega')]//ancestor::li"
-        );
-
-        public static Component azureRoulette = new Component(
-                "Azure Roulette",
-                "Roulette",
-                "Pragmatic",
-                "//div[contains(@title, 'Azure')]//ancestor::li"
-        );
-
-        public static Component powerUpRoulette = new Component(
-                "Power Up Roulette",
-                "Roulette",
-                "Pragmatic",
-                "//div[contains(@title, 'PowerUP')]//ancestor::li"
-        );
-
-        public static Component speedRoulette = new Component(
-                "Speed Roulette",
-                "Roulette",
-                "Pragmatic",
-                "//div[contains(@title, 'Speed')]//ancestor::li"
-        );
-
-        public static Component greenRoulette = new Component(
-                "Green Roulette",
-                "Roulette",
-                "Pragmatic",
-                "//div[contains(@title, 'Green')]//ancestor::li"
-        );
-
-        public static Component autoRoulette = new Component(
-                "Auto Roulette",
-                "Roulette",
-                "Pragmatic",
-                "//div[contains(@title, 'Auto')]//ancestor::li"
-        );
-
-    }
-
-    public static class GameShows{
-
-        public static Component megaWheel = new Component(
-                "Mega Wheel",
-                "Game Shows",
-                "Pragmatic",
-                "//div[@title='Mega Wheel']//ancestor::li"
-        );
-
-        public static Component candyLand = new Component(
-                "Sweet Bonanza CandyLand",
-                "Game Shows",
-                "Pragmatic",
-                "//div[@title='Sweet Bonanza CandyLand']//ancestor::li"
-        );
-
-        public static Component megaSicbo = new Component(
-                "Mega Sic Bo",
-                "Game Shows",
-                "Pragmatic",
-                "//div[@title='Mega Sic Bo']//ancestor::li"
-        );
-
-        public static Component megaRoulette = new Component(
-                "Mega Roulette",
-                "Game Shows",
-                "Pragmatic",
-                "//div[@title='Mega Roulette']//ancestor::li"
-        );
-
-        public static Component powerUpRoulette = new Component(
-                "PowerUP Roulette",
-                "Game Shows",
-                "Pragmatic",
-                "//div[@title='PowerUP Roulette']//ancestor::li"
-        );
-
-        public static Component boomCity = new Component(
-                "Boom City",
-                "Game Shows",
-                "Pragmatic",
-                "//div[@title='Boom City']//ancestor::li"
-        );
-    }
-
-    public static class SicBo{
-
-        public static Component megaSicBo = new Component(
-                "Mega Sic Bo",
-                "SicBo",
-                "Pragmatic",
-                "//div[@title='Mega Sic Bo']//ancestor::li"
-        );
-    }
-
-    public static class DragonTiger{
-
-        public static Component dragonTiger = new Component(
-                "Dragon Tiger",
-                "Dragon Tiger",
-                "Pragmatic",
-                "//div[@title='Dragon Tiger']//ancestor::li"
-        );
-    }
-
-    public static class AndarBahar{
-
-        public static Component andarBahar = new Component(
-                "Andar Bahar",
-                "Andar Bahar",
-                "Pragmatic",
-                "//div[@title='Andar Bahar']//ancestor::li"
-        );
-    }
+    public static Component andarBaharTables = new Component(
+            "Andar Bahar Tables",
+            "Button",
+            "Casino",
+            "//div[@class='fp_fy']"
+    );
 }

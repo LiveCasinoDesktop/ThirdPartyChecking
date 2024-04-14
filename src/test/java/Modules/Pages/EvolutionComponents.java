@@ -25,6 +25,58 @@ public class EvolutionComponents {
             "//div[contains(@class, 'CategoryIcon') and contains(@class, 'active')]"
     );
 
+
+    public static Component logo = new Component(
+            "Logo",
+            "Navigation",
+            "Lobby",
+            "//button[@aria-label='Go to home page']"
+    );
+
+
+    public static Component games = new Component(
+            "Games Button",
+            "Navigation",
+            "Lobby",
+            "//span[normalize-space()='Games']//ancestor::button"
+    );
+
+    public static class Navigation{
+
+        public static Component logo = new Component(
+                "Evolution Logo",
+                "Button",
+                "Evolution",
+                "//img[@alt='casino-logo']"
+        );
+
+        public static Component roulette = new Component(
+                "Roulette",
+                "Button",
+                "Evolution",
+                "//li[@id='category-navigator-roulette']"
+        );
+        public static Component baccarat_SicBo = new Component(
+                "Baccarat & Sic Bo",
+                "Button",
+                "Evolution",
+                "//span[normalize-space()='Baccarat & Sic Bo']//ancestor::li"
+        );
+
+        public static Component poker = new Component(
+                "Poker",
+                "Button",
+                "Evolution",
+                "//li[@id='category-navigator-poker']"
+        );
+        public static Component gameShows = new Component(
+                "Game Shows",
+                "Button",
+                "Evolution",
+                "//li[@id='category-navigator-game_shows']"
+        );
+    }
+
     public static class Roulette{
 
         public static Component rouletteTables = new Component(

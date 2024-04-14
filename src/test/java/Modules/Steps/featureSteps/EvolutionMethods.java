@@ -36,8 +36,8 @@ public class EvolutionMethods extends Driver {
     }
 
     public static void verify(String category) {
-        Waiting.element(EvolutionComponents.activeNav, 30);
 
+        Waiting.element(EvolutionComponents.activeNav, 30);
         Waiting.fewSeconds(5);
 
         Component tablesComponent;

@@ -19,6 +19,14 @@ public class JavaScript extends Driver {
 
     }
 
+    public static void scrollToTop(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        // Execute script to scroll to top (using window.scrollTo)
+        js.executeScript("window.scrollTo(0, 0)");
+
+    }
+
 
     public static void scrollTo(Component component, int index){
         JavascriptExecutor js = (JavascriptExecutor) driver;

@@ -7,9 +7,12 @@ import Modules.Steps.featureSteps.EvolutionMethods;
 import Modules.Steps.featureSteps.PragmaticMethods;
 import Modules.Steps.featureSteps.SexyMethods;
 import Utilities.Helper.Drivers;
+import Utilities.Helper.JsonFormatter;
 import Utilities.Helper.Waiting;
 import Utilities.Listeners.Events;
 import Utilities.Listeners.FileEvent;
+import Utilities.Listeners.JsonGenerator;
+import Utilities.Listeners.SendEmail;
 import Utilities.Objects.Component;
 import Utilities.Settings.Constants;
 import engine.Driver;
@@ -23,28 +26,32 @@ import java.util.List;
 
 public class General extends Driver {
 
+    String provider, category;
     Component thirdPartyComponent, componentButton;
     List<String> tableList, lobbyList, fileList;
     String product;
-
     String timeStamp;
     @When("I Go To SBOTOP")
     public void iGoToSBOTOP() {
 
-        driver.get(Constants.URL);
     }
     @And("Login Account")
     public void loginAccount() {
+        driver.get(Constants.URL);
 
-        Waiting.fewSeconds(3);
+        Waiting.fewSeconds(5);
+
         Waiting.element(SBOTOP.Landing.user, 30);
         Events.sendKeys(SBOTOP.Landing.user, Constants.Accounts.IDR.username);
+        Waiting.fewSeconds(3);
 
         Waiting.element(SBOTOP.Landing.pass, 30);
         Events.sendKeys(SBOTOP.Landing.pass, Constants.Accounts.IDR.password);
+        Waiting.fewSeconds(3);
 
         Waiting.element(SBOTOP.Landing.login, 30);
         Events.click(SBOTOP.Landing.login);
+        Waiting.fewSeconds(3);
 
         Waiting.element(SBOTOP.Landing.accountName, 30);
 
@@ -90,13 +97,6 @@ public class General extends Driver {
 
         clickThirdParty();
 
-        try{
-
-            Waiting.element(SBOTOP.Casino.redirection, 10);
-            Events.click(SBOTOP.Casino.redirection);
-
-        }catch (Exception ignore){}
-
         Waiting.fewSeconds(3);
         Drivers.changeWindow();
 
@@ -107,6 +107,10 @@ public class General extends Driver {
             Drivers.changeIFrame(EvolutionComponents.iframe);
         }
         else if(thirdParty.equals("Sexy")){
+
+            Waiting.fewSeconds(2);
+
+            Drivers.refresh();
 
             try{
 
@@ -122,7 +126,8 @@ public class General extends Driver {
                     driver.close();
                     Drivers.selectOriginalWindow();
                     clickThirdParty();
-                    Waiting.element(Sexy.IFrame.gameHall, 20);
+                    Drivers.changeWindow();
+                    Waiting.element(Sexy.IFrame.gameHall, 30);
                 }
             }
 
@@ -138,6 +143,9 @@ public class General extends Driver {
 
         FileEvent.readExcel(category, thirdParty);
         tableList = FileEvent.gameList;
+
+        provider = thirdParty;
+        this.category = category;
 
         System.out.println("===============");
         System.out.println("Excel File Table List");
@@ -165,16 +173,16 @@ public class General extends Driver {
 
             switch (category){
 
-                case "Baccarat" -> product = "BC";
-                case "Roulette" -> product = "RL";
-                case "Game Shows" -> product = "GS";
-                case "Sic Bo" -> product = "SB";
-                case "Dragon Tiger" -> product = "DT";
-                default -> product = "AB";
+                case "Baccarat" -> product = "Baccarat";
+                case "Roulette" -> product = "Roulette";
+                case "Game Shows" -> product = "Game Shows";
+                case "Sic Bo" -> product = "Sic Bo";
+                case "Dragon Tiger" -> product = "Dragon Tiger";
+                default -> product = "Andar Bahar";
             }
 
-            PragmaticMethods.clickNavigator(category);
-            PragmaticMethods.verify(category);
+            //PragmaticMethods.clickNavigator(category);
+            //PragmaticMethods.verify(category);
 
             System.out.println("=======================");
             System.out.println("Left Join Verification");
@@ -284,5 +292,29 @@ public class General extends Driver {
         Drivers.hoverToElement(thirdPartyComponent);
         Waiting.fewSeconds(3);
         Events.click(componentButton);
+
+
+        try{
+
+            Waiting.element(SBOTOP.Casino.redirection, 10);
+            Events.click(SBOTOP.Casino.redirection);
+
+        }catch (Exception ignore){}
+    }
+
+    @Then("Send Email")
+    public void sendEmail() {
+
+
+        SendEmail.send();
+    }
+
+
+
+    @And("Generate Excel File {string}")
+    public void generateExcelFile(String provider) throws IOException {
+
+        FileEvent.excel(provider, category, fileList, lobbyList);
+
     }
 }

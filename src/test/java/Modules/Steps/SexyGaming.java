@@ -1,13 +1,13 @@
 package Modules.Steps;
 
-import Modules.Steps.featureSteps.PragmaticMethods;
+import Modules.Pages.SBOTOP;
+import Modules.Steps.featureSteps.SexyMethods;
+import Utilities.Helper.Drivers;
+import Utilities.Helper.JavaScript;
 import Utilities.Helper.JsonFormatter;
 import Utilities.Helper.Waiting;
-import Utilities.Listeners.Events;
-import Utilities.Listeners.FileEvent;
 import Utilities.Objects.Component;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import engine.Driver;
 import io.cucumber.java.en.And;
 
 import java.io.IOException;
@@ -16,53 +16,52 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Pragmatic extends Driver {
+public class SexyGaming {
 
     List<Map<String, Object>> information = new ArrayList<>();
     public String product, provider;
     List<String> tableList, lobbyList, fileList;
+    @And("Get All {string} Tables of Sexy Gaming")
+    public void getAllTablesOfSexyGaming(String category) {
 
-    @And("Get All {string} Tables of Pragmatic")
-    public void getAllTablesOfPragmatic(String category) throws IOException {
+        provider = "SexyGaming";
 
-        provider = "Pragmatic";
-        String activeCategory = Events.getText(Modules.Pages.Pragmatic.Navigation.active);
+        try{
 
-        Component component = switch (category){
+            JavaScript.click(SBOTOP.SexyNav.closeBanner);
+        }catch (Exception e){
 
-            case "Baccarat" -> Modules.Pages.Pragmatic.Navigation.baccarat;
-            case "Roulette" -> Modules.Pages.Pragmatic.Navigation.roulette;
-            case "Game Shows" -> Modules.Pages.Pragmatic.Navigation.gameShows;
-            case "Sic Bo" -> Modules.Pages.Pragmatic.Navigation.sicBo;
-            case "Dragon Tiger" -> Modules.Pages.Pragmatic.Navigation.dragonTiger;
-            default -> Modules.Pages.Pragmatic.Navigation.andarBahar;
+            Drivers.refresh();
+            JavaScript.click(SBOTOP.SexyNav.closeBanner);
+        }
+        Waiting.fewSeconds(3);
 
+        Component component = switch (category) {
+            case "Baccarat" -> SBOTOP.SexyNav.Navigation.baccarat;
+            case "Dragon Tiger" -> SBOTOP.SexyNav.Navigation.dragonTiger;
+            case "Dice" -> SBOTOP.SexyNav.Navigation.dice;
+            default -> SBOTOP.SexyNav.Navigation.roulette;
         };
 
-        if(!activeCategory.equals(category)){
+        try{
+            Waiting.element(component, 30);
 
-            Waiting.fewSeconds(2);
-            Events.click(component);
+        }catch (Exception e){
+            Drivers.refresh();
+            try{
+
+                JavaScript.click(SBOTOP.SexyNav.closeBanner);
+            }catch (Exception ignore){}
+            Waiting.element(component, 40);
         }
 
-        FileEvent.readExcel(category, provider);
-        tableList = FileEvent.gameList;
-
-        System.out.println("===============");
-        System.out.println("Excel File Table List");
-        System.out.println("Table Size: " + tableList.size());
-        System.out.println("===============");
-        for(String table : tableList){
-
-            System.out.println(table);
-        }
-        System.out.println("============================================================");
-        System.out.println("============================================================");
+        Waiting.fewSeconds(3);
+        JavaScript.click(component);
 
     }
 
-    @And("Verify {string} of Pragmatic")
-    public void verifyOfPragmatic(String category) throws IOException {
+    @And("Verify {string} of Sexy Gaming")
+    public void verifyOfSexyGaming(String category) throws IOException {
 
         fileList = new ArrayList<>();
         lobbyList = new ArrayList<>();
@@ -70,19 +69,19 @@ public class Pragmatic extends Driver {
         switch (category){
 
             case "Baccarat" -> product = "Baccarat";
-            case "Roulette" -> product = "Roulette";
-            case "Game Shows" -> product = "Game Shows";
-            case "Sic Bo" -> product = "Sic Bo";
             case "Dragon Tiger" -> product = "Dragon Tiger";
-            default -> product = "Andar Bahar";
+            case "Dice" -> product = "Dice";
+            default -> product = "Roulette";
         }
 
-        //EvolutionMethods.clickNavigator(category);
-        PragmaticMethods.verify(category);
+
+        SexyMethods.verify(category);
+
+        List<String> tableList = SexyMethods.tableList;
 
         System.out.println("=======================");
         System.out.println("Left Join Verification");
-        for(String table : PragmaticMethods.tableList){
+        for(String table : SexyMethods.tableList){
 
             if(!tableList.contains(table)){
 
@@ -95,7 +94,7 @@ public class Pragmatic extends Driver {
         System.out.println("Right Join Verification");
         for(String table : tableList){
 
-            if(!tableList.contains(table)){
+            if(!SexyMethods.tableList.contains(table)){
 
                 System.out.println("Game Lobby have no: " + table);
                 lobbyList.add(table);
@@ -103,10 +102,7 @@ public class Pragmatic extends Driver {
         }
 
         createJSON();
-
     }
-
-
 
     private void createJSON() throws IOException {
 
@@ -133,9 +129,11 @@ public class Pragmatic extends Driver {
 
     }
 
-    @And("Display JSON Pragmatic")
-    public void displayJSONPragmatic() throws IOException {
+
+    @And("Display JSON Sexy Gaming")
+    public void displayJSONSexyGaming() throws IOException {
 
         JsonFormatter.generate(information, provider);
+
     }
 }

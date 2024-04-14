@@ -98,7 +98,20 @@ public class SexyMethods extends Driver {
             tableName = element.getText();
             if(!tableName.isEmpty()){
 
-                tableList.add(element.getText());
+                String table = element.getText();
+                String[] tableArr = table.split("Maintenance");
+
+                table = tableArr[0];
+                tableArr = table.split("\n");
+
+                table = tableArr[0];
+
+                tableArr = table.split(" ");
+
+                table = tableArr[0].concat(tableArr[1]);
+                System.out.println(table);
+
+                tableList.add(table);
             }
         }
 
@@ -110,6 +123,8 @@ public class SexyMethods extends Driver {
 
             System.out.println(element);
         }
+
+
     }
 
 }
