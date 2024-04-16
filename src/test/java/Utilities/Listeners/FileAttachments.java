@@ -56,7 +56,7 @@ public class FileAttachments {
 
     private static boolean isTextFile(File file) {
         // Define the allowed image file extensions
-        String[] allowedExtensions = {".xls"};
+        String[] allowedExtensions = {".xlsx"};
 
         // Check if the file has one of the allowed extensions
         return Arrays.stream(allowedExtensions).anyMatch(ext -> file.getName().toLowerCase().endsWith(ext));

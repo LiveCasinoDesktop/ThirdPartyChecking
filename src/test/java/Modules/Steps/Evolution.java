@@ -6,6 +6,7 @@ import Utilities.Helper.JsonFormatter;
 import Utilities.Helper.Waiting;
 import Utilities.Listeners.Events;
 import Utilities.Listeners.FileEvent;
+import Utilities.Listeners.JsonGenerator;
 import Utilities.Objects.Component;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import engine.Driver;
@@ -111,22 +112,7 @@ public class Evolution extends Driver {
         System.out.println("================================");
         System.out.println("================================");
 
-
-
-        //Map<String, Object> existing = information(fileName);
-
-        Map<String, Object> data = new LinkedHashMap<>();
-        data.put("category", product);
-        data.put("fileList", fileList);
-        data.put("lobbyList", lobbyList);
-        ObjectMapper mapper = new ObjectMapper();
-        String jsonData = mapper.writeValueAsString(data);
-        System.out.println(jsonData);
-        System.out.println("================================");
-        System.out.println("================================");
-        System.out.println("================================");
-
-        information.add(data);
+        information.add(JsonGenerator.generate(product, tableList, fileList, lobbyList));
 
     }
     @And("Display JSON {string}")

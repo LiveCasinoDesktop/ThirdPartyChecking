@@ -1,11 +1,13 @@
 package Modules.Steps;
 
 import Modules.Pages.SBOTOP;
+import Modules.Pages.Sexy;
 import Modules.Steps.featureSteps.SexyMethods;
 import Utilities.Helper.Drivers;
 import Utilities.Helper.JavaScript;
 import Utilities.Helper.JsonFormatter;
 import Utilities.Helper.Waiting;
+import Utilities.Listeners.JsonGenerator;
 import Utilities.Objects.Component;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.And;
@@ -44,16 +46,30 @@ public class SexyGaming {
         };
 
         try{
+            System.out.println("Waiting for Element");
             Waiting.element(component, 30);
 
         }catch (Exception e){
             Drivers.refresh();
             try{
 
+                System.out.println("Re Trying...");
+                Waiting.element(SBOTOP.SexyNav.closeBanner, 40);
                 JavaScript.click(SBOTOP.SexyNav.closeBanner);
+                Waiting.element(component, 40);
             }catch (Exception ignore){}
-            Waiting.element(component, 40);
+
         }
+
+        try{
+
+            System.out.println("Changing iFrame...");
+            Drivers.changeIFrame(Sexy.IFrame.gameHall);
+            System.out.println("Re Trying...");
+            //Waiting.element(SBOTOP.SexyNav.closeBanner, 40);
+            JavaScript.click(SBOTOP.SexyNav.closeBanner);
+            //Waiting.element(component, 40);
+        }catch (Exception ignore){}
 
         Waiting.fewSeconds(3);
         JavaScript.click(component);
@@ -77,7 +93,7 @@ public class SexyGaming {
 
         SexyMethods.verify(category);
 
-        List<String> tableList = SexyMethods.tableList;
+        tableList = SexyMethods.tableList;
 
         System.out.println("=======================");
         System.out.println("Left Join Verification");
@@ -110,23 +126,7 @@ public class SexyGaming {
         System.out.println("================================");
         System.out.println("================================");
 
-
-
-        //Map<String, Object> existing = information(fileName);
-
-        Map<String, Object> data = new LinkedHashMap<>();
-        data.put("category", product);
-        data.put("fileList", fileList);
-        data.put("lobbyList", lobbyList);
-        ObjectMapper mapper = new ObjectMapper();
-        String jsonData = mapper.writeValueAsString(data);
-        System.out.println(jsonData);
-        System.out.println("================================");
-        System.out.println("================================");
-        System.out.println("================================");
-
-        information.add(data);
-
+        information.add(JsonGenerator.generate(product, tableList, fileList, lobbyList));
     }
 
 

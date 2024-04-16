@@ -38,7 +38,11 @@ public class Drivers extends Driver {
         WebElement element = driver.findElement(By.xpath(component.getPath()));
         driver.switchTo().frame(element);
 
+    }
 
+    public static void maximize(){
+
+        driver.manage().window().maximize();
     }
 
     public static void hoverToElement(Component component){

@@ -100,6 +100,8 @@ public class General extends Driver {
         Waiting.fewSeconds(3);
         Drivers.changeWindow();
 
+        Drivers.maximize();
+
 
         if(thirdParty.equals("Evolution")){
 
@@ -127,7 +129,6 @@ public class General extends Driver {
                     Drivers.selectOriginalWindow();
                     clickThirdParty();
                     Drivers.changeWindow();
-                    Waiting.element(Sexy.IFrame.gameHall, 30);
                 }
             }
 
@@ -278,11 +279,6 @@ public class General extends Driver {
             }
         }
     }
-    @And("Print Text File {string}")
-    public void printTextFile(String provider) {
-
-        FileEvent.generateFile(provider, product, fileList, lobbyList, timeStamp);
-    }
 
 
     private void clickThirdParty(){
@@ -309,12 +305,4 @@ public class General extends Driver {
         SendEmail.send();
     }
 
-
-
-    @And("Generate Excel File {string}")
-    public void generateExcelFile(String provider) throws IOException {
-
-        FileEvent.excel(provider, category, fileList, lobbyList);
-
-    }
 }

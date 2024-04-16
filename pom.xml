@@ -126,7 +126,12 @@
       <version>1.4.14</version>
       <scope>test</scope>
     </dependency>
-
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-compress -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-compress</artifactId>
+      <version>1.26.1</version>
+    </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
     <dependency>

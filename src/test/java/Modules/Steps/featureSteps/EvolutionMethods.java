@@ -54,6 +54,8 @@ public class EvolutionMethods extends Driver {
         tableList = new ArrayList<>();
         List<WebElement> tables = driver.findElements(By.xpath(tablesComponent.getPath()));
 
+        System.out.println("Table Size: " + tables.size());
+
         for(WebElement element : tables){
 
             JavaScript.scrollTo(element);

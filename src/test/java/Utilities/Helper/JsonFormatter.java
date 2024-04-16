@@ -4,24 +4,15 @@ package Utilities.Helper;
 import Utilities.Listeners.Events;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFFont;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.*;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 public class JsonFormatter {
-
 
     static String jsonDirectory = "reports/json/";
     static String excelDirectory = "reports/excel/";
@@ -39,11 +30,7 @@ public class JsonFormatter {
 
         try{
 
-            for(Map<String, Object> data : information){
-
-                System.out.println(data);
-            }
-
+            for(Map<String, Object> data : information){System.out.println(data);}
 
             ObjectMapper mapper = new ObjectMapper();
 
@@ -71,52 +58,109 @@ public class JsonFormatter {
         String formattedDate = excelDirectory.concat(Events.FORMATTER.dateFormat());
 
         File theDir = new File(formattedDate);
-        if (!theDir.exists()){
-            theDir.mkdirs();
-        }
 
+        if (!theDir.exists()){theDir.mkdirs();}
 
         ObjectMapper mapper = new ObjectMapper();
         List<Map<String, Object>> information = mapper.readValue(new FileReader(path), List.class);
 
-        Workbook workbook = new HSSFWorkbook();
+        Workbook workbook = new XSSFWorkbook();
+        CellStyle headerStyle;
+
+        headerStyle = workbook.createCellStyle();
+        headerStyle.setAlignment(HorizontalAlignment.CENTER);
+
+        XSSFFont headerFont = (XSSFFont) workbook.createFont();
+        headerFont.setBold(true);
+        headerFont.setFontHeightInPoints((short) 14);
+        headerStyle.setFont(headerFont);
 
         for(Map<String, Object> categoryData : information){
 
+            // fileList (single cell with comma-separated values)
+            List<String> baseList = (List<String>) categoryData.get("baseList");
+            // fileList (single cell with comma-separated values)
+            List<String> addedList = (List<String>) categoryData.get("addedList");
+            // lobbyList (separate cells)
+            List<String> removedList = (List<String>) categoryData.get("removedList");
 
             String categoryName = (String) categoryData.get("category");
             Sheet sheet = workbook.createSheet(categoryName);
-
-
             Row headerRow = sheet.createRow(0);
-            Cell fileListCell = headerRow.createCell(0);
-            fileListCell.setCellValue("File List:");
-            Cell lobbyListCell = headerRow.createCell(1);
-            lobbyListCell.setCellValue("Lobby List:");
+
+            Cell baseListCell = headerRow.createCell(0);
+            baseListCell.setCellValue("Base List:");
+            baseListCell.setCellStyle(headerStyle);
+
+            Cell addedListCell = headerRow.createCell(2);
+            addedListCell.setCellValue("Added List:");
+            addedListCell.setCellStyle(headerStyle);
+
+            Cell removedListCell = headerRow.createCell(4);
+            removedListCell.setCellValue("Removed List:");
+            removedListCell.setCellStyle(headerStyle);
 
             // Data Rows
             int rowIndex = 1;
 
-            // fileList (single cell with comma-separated values)
-            List<String> fileList = (List<String>) categoryData.get("fileList");
-            for (String item : fileList) {
-                Row fileListRow = sheet.createRow(rowIndex++);
-                Cell fileListValueCell = fileListRow.createCell(0);
-                fileListValueCell.setCellValue(item);
+            Row baseListRow, addedListRow, removedListRow;
+            Cell baseListValueCell, addedListValueCell, removedListValueCell;
+
+            for (String item : baseList) {
+                System.out.println(item);
+                baseListRow = sheet.createRow(rowIndex++);
+                baseListValueCell = baseListRow.createCell(0);
+                baseListValueCell.setCellValue(item);
+            }
+            // Data Rows
+            rowIndex = 1;
+
+            // * IF FILE LIST IS NOT NULL, PRINT ALL VALUES. ELSE, PRINT NO ISSUE
+            if(!addedList.isEmpty()){
+
+                for (String item : addedList) {
+                    System.out.println(item);
+                    addedListRow = sheet.getRow(rowIndex++);
+                    addedListValueCell = addedListRow.createCell(2);
+                    addedListValueCell.setCellValue(item);
+                }
+            }
+            else{
+
+                addedListRow = sheet.getRow(rowIndex);
+                addedListValueCell = addedListRow.createCell(2);
+                addedListValueCell.setCellValue("No Issue");
             }
 
-            // lobbyList (separate cells)
-            List<String> lobbyList = (List<String>) categoryData.get("lobbyList");
-            for (String item : lobbyList) {
-                Row lobbyListRow = sheet.createRow(rowIndex++);
-                Cell lobbyListValueCell = lobbyListRow.createCell(1);
-                lobbyListValueCell.setCellValue(item);
+            // Data Rows
+            rowIndex = 1;
+
+            // * IF LOBBY LIST IS NOT NULL, PRINT ALL VALUES. ELSE, PRINT NO ISSUE
+            if(!removedList.isEmpty()){
+
+                for (String item : removedList) {
+                    System.out.println(item);
+                    removedListRow = sheet.getRow(rowIndex++);
+                    removedListValueCell = removedListRow.createCell(4);
+                    removedListValueCell.setCellValue(item);
+                }
             }
+            else{
+
+                removedListRow = sheet.getRow(rowIndex);
+                removedListValueCell = removedListRow.createCell(4);
+                removedListValueCell.setCellValue("No Issue");
+            }
+
+            sheet.autoSizeColumn(0);
+            sheet.autoSizeColumn(2);
+            sheet.autoSizeColumn(4);
 
         }
 
 
-        String file = formattedDate.concat("/"+provider.toLowerCase()+".xls");
+        String file = formattedDate.concat("/"+provider.toLowerCase()+".xlsx");
+
         // Write to Excel file
         FileOutputStream outputStream = new FileOutputStream(file);
         workbook.write(outputStream);
@@ -126,4 +170,5 @@ public class JsonFormatter {
         System.out.println("JSON data converted to Excel successfully!");
 
     }
+
 }
