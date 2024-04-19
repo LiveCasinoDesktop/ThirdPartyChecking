@@ -20,6 +20,7 @@ Feature: Checking Table List in Evolution Casino
 
     And Display JSON "Evolution"
 
+  @trials
   Scenario: Checking all games of Evolution
 
     When Try to get All "Baccarat & Sic Bo" Tables of Evolution
