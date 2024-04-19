@@ -66,7 +66,6 @@ public class Evolution extends Driver {
         System.out.println("============================================================");
 
     }
-
     @And("Verify {string} of Evolution")
     public void verifyOfEvolution(String category) throws IOException {
 
@@ -108,8 +107,6 @@ public class Evolution extends Driver {
         createJSON();
 
     }
-
-
     private void createJSON() throws IOException {
 
         System.out.println("================================");

@@ -88,17 +88,27 @@ public class JsonFormatter {
             Sheet sheet = workbook.createSheet(categoryName);
             Row headerRow = sheet.createRow(0);
 
-            Cell baseListCell = headerRow.createCell(0);
-            baseListCell.setCellValue("Base List:");
-            baseListCell.setCellStyle(headerStyle);
+            headersCells(headerRow, headerStyle);
 
-            Cell addedListCell = headerRow.createCell(2);
-            addedListCell.setCellValue("Added List:");
-            addedListCell.setCellStyle(headerStyle);
-
-            Cell removedListCell = headerRow.createCell(4);
-            removedListCell.setCellValue("Removed List:");
-            removedListCell.setCellStyle(headerStyle);
+//            Cell baseListCell = headerRow.createCell(0);
+//            baseListCell.setCellValue("Base List:");
+//            baseListCell.setCellStyle(headerStyle);
+//
+//            Cell addedListCell = headerRow.createCell(2);
+//            addedListCell.setCellValue("Added List:");
+//            addedListCell.setCellStyle(headerStyle);
+//
+//            Cell addedTimeStampCell = headerRow.createCell(3);
+//            addedTimeStampCell.setCellValue("Removed List:");
+//            addedTimeStampCell.setCellStyle(headerStyle);
+//
+//            Cell removedListCell = headerRow.createCell(5);
+//            removedListCell.setCellValue("Removed List:");
+//            removedListCell.setCellStyle(headerStyle);
+//
+//            Cell removedTimeStampCell = headerRow.createCell(6);
+//            removedTimeStampCell.setCellValue("Removed List:");
+//            removedTimeStampCell.setCellStyle(headerStyle);
 
             // Data Rows
             int rowIndex = 1;
@@ -141,20 +151,20 @@ public class JsonFormatter {
                 for (String item : removedList) {
                     System.out.println(item);
                     removedListRow = sheet.getRow(rowIndex++);
-                    removedListValueCell = removedListRow.createCell(4);
+                    removedListValueCell = removedListRow.createCell(5);
                     removedListValueCell.setCellValue(item);
                 }
             }
             else{
 
                 removedListRow = sheet.getRow(rowIndex);
-                removedListValueCell = removedListRow.createCell(4);
+                removedListValueCell = removedListRow.createCell(5);
                 removedListValueCell.setCellValue("No Issue");
             }
 
             sheet.autoSizeColumn(0);
             sheet.autoSizeColumn(2);
-            sheet.autoSizeColumn(4);
+            sheet.autoSizeColumn(5);
 
         }
 
@@ -171,4 +181,28 @@ public class JsonFormatter {
 
     }
 
+
+    // ? CREATE HEADERS CELLS
+    private static void headersCells(Row headerRow, CellStyle headerStyle){
+
+        Cell baseListCell = headerRow.createCell(0);
+        baseListCell.setCellValue("Base List:");
+        baseListCell.setCellStyle(headerStyle);
+
+        Cell addedListCell = headerRow.createCell(2);
+        addedListCell.setCellValue("Added List:");
+        addedListCell.setCellStyle(headerStyle);
+
+        Cell addedTimeStampCell = headerRow.createCell(3);
+        addedTimeStampCell.setCellValue("Timestamp:");
+        addedTimeStampCell.setCellStyle(headerStyle);
+
+        Cell removedListCell = headerRow.createCell(5);
+        removedListCell.setCellValue("Removed List:");
+        removedListCell.setCellStyle(headerStyle);
+
+        Cell removedTimeStampCell = headerRow.createCell(6);
+        removedTimeStampCell.setCellValue("Timestamp:");
+        removedTimeStampCell.setCellStyle(headerStyle);
+    }
 }
