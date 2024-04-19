@@ -44,6 +44,10 @@ public class Constants {
             public static String username = "hnd.ong@leekie.com";
             public static String name = "Hendrik Ong";
         }
+        public static class Receiver3{
+            public static String username = "mich.pab@leekie.com";
+            public static String name = "Michael Aaron Pablo";
+        }
 
     }
 }

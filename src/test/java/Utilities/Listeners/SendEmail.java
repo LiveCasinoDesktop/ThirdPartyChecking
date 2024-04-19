@@ -32,10 +32,11 @@ public class SendEmail {
                 String htmlMessage = "<html><body><p style=\"font-family: 'Arial', sans-serif; font-size: 16px; color: #333;\">" +
                         "Good Day Everyone!<br>" +
                         "The following attachments are the Excel Files Results for each 3rd Party Providers.</p>" +
-                        "Each categories has its own sheet. There are 2 columns for each categories, <b><i>File List</i></b> and <b><i>Lobby List</i></b>.</p>"+
+                        "Each categories has its own sheet. There are 3 columns for each categories: <b><i>Base List</i></b>, <b><i>Added List</i></b>, and <b><i>Removed List</i></b>.</p>"+
                         "<ul>" +
-                        "<li><b><i>File List</i></b>: Are the tables that are listed inside the Game Lobby that are not listed inside the 3rd Party Table List File (the excel file given to the automation team).</li>" +
-                        "<li><b><i>Lobby List</i></b>: Are the tables that are listed inside the 3rd Party Table List File but not visible inside the Game Lobby</li>" +
+                        "<li><b><i>Base List</i></b>: Is the list that will be compared to by the tables inside the Game Lobby</li>" +
+                        "<li><b><i>Added List</i></b>: List of the tables that are added inside the game and not found in the Base List.</li>" +
+                        "<li><b><i>Removed List</i></b>: Lost of the tables that are inside the Base List, but cannot be found in Game Lobby</li>" +
                         "</ul>" +
                         "<p style=\"font-family: 'Arial', sans-serif; font-size: 16px; color: #333;\">Please check the attachments, thank you! - <b>" + " Automation Team "
                         + "</b></p></body></html>";
@@ -94,7 +95,7 @@ public class SendEmail {
 
         email.addTo(Constants.Email.Receiver1.username, Constants.Email.Receiver1.name); // ! SETTING RECEIVER USERNAME AND NAM
         email.addTo(Constants.Email.Receiver2.username, Constants.Email.Receiver2.name); // ! SETTING RECEIVER USERNAME AND NAM
-
+        email.addTo(Constants.Email.Receiver3.username, Constants.Email.Receiver3.name); // ! SETTING RECEIVER USERNAME AND NAM
 
     }
     private static void sendEmail(HtmlEmail email) throws EmailException {

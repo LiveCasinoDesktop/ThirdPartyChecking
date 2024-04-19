@@ -5,27 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b97d22c-569b-4065-a5db-682945c2de9c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/excel/14-Apr-24/evolution.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/excel/14-Apr-24/pragmatic.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/excel/14-Apr-24/sexygaming.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/json/14-Apr-24/Evolution.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/json/14-Apr-24/Pragmatic.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/json/14-Apr-24/SexyGaming.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/Pragmatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Pragmatic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/SexyGaming.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/SexyGaming.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/EvolutionMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/EvolutionMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Helper/Drivers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Helper/Drivers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Helper/JsonFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Helper/JsonFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/FileAttachments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/FileAttachments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/FileEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/FileEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/JsonGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/JsonGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Excel/tableList.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Excel/tableList.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/Priority1/Pragmatic.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/Priority1/Pragmatic.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/Priority1/SexyGaming.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/Priority1/SexyGaming.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 15-Apr-24 14-25-58/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 15-Apr-24 14-25-58/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 15-Apr-24 14-42-59/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 15-Apr-24 14-42-59/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 15-Apr-24 14-58-40/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 15-Apr-24 14-58-40/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 16-Apr-24 11-01-25/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 16-Apr-24 11-01-25/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 16-Apr-24 11-24-43/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 16-Apr-24 11-24-43/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 16-Apr-24 11-39-27/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 16-Apr-24 11-39-27/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 16-Apr-24 13-03-02/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 16-Apr-24 13-03-02/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/PragmaticMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/PragmaticMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output" beforeDir="false" afterPath="$PROJECT_DIR$/test-output" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,13 +54,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Scenario: Send Email.executor": "Run",
+    "JUnit.Runner.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/kar.par/Documents/GitHub/MavenLiveBaccarat",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/sc.auto/Documents/GitHub/ThirdPartyAutomation",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "configurable.group.appearance"
   }
 }]]></component>
@@ -142,15 +143,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Checking Pragmatic All Games" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Send Email" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Priority1/Pragmatic.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Priority2/SendFile.feature" />
       <option name="GLUE" value="Modules.Steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ThirdPartyAutomation" />
-      <option name="NAME_FILTER" value="^Checking Pragmatic All Games$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Checking Pragmatic All Games$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Checking Pragmatic All Games" />
+      <option name="NAME_FILTER" value="^Send Email$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Send Email$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Send Email" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -174,10 +175,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Scenario: Send Email" />
         <item itemvalue="Cucumber Java.Feature: SexyGaming" />
         <item itemvalue="Cucumber Java.Feature: SendFile" />
         <item itemvalue="Cucumber Java.Feature: Evolution" />
-        <item itemvalue="Cucumber Java.Scenario: Checking Pragmatic All Games" />
       </list>
     </recent_temporary>
   </component>

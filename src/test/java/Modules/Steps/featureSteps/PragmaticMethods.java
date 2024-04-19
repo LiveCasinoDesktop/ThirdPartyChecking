@@ -17,8 +17,6 @@ public class PragmaticMethods extends Driver {
 
     public static void verify(String category) {
 
-        Waiting.element(Pragmatic.Navigation.logo, 30);
-
         Waiting.fewSeconds(5);
 
         Component tablesComponent = switch (category){
