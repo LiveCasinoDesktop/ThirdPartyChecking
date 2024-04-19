@@ -7,6 +7,7 @@ import Utilities.Helper.Waiting;
 import Utilities.Listeners.Events;
 import Utilities.Listeners.FileEvent;
 import Utilities.Listeners.JsonGenerator;
+import Utilities.Listeners.SendEmail;
 import Utilities.Objects.Component;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -218,6 +219,7 @@ public class Evolution extends Driver {
 
             information.add(JsonGenerator.generate(product, tableList, fileList, lobbyList));
             JsonFormatter.generate(information, provider);
+            SendEmail.send();
 
         }
     }

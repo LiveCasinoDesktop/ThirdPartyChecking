@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b97d22c-569b-4065-a5db-682945c2de9c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-Apr-24 17-57-56/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-Apr-24 17-57-56/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 18-Apr-24 17-09-49/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 18-Apr-24 17-09-49/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 19-Apr-24 09-19-15/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 19-Apr-24 09-19-15/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 19-Apr-24 10-11-56/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 19-Apr-24 10-11-56/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 19-Apr-24 10-27-35/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 19-Apr-24 10-27-35/test-output/automaton-report.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/Priority1/Evolution.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/Priority1/Evolution.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
