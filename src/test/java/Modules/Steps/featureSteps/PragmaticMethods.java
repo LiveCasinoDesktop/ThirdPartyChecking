@@ -17,6 +17,8 @@ public class PragmaticMethods extends Driver {
 
     public static void verify(String category) {
 
+        System.out.println("=========================================================");
+        System.out.println("======================= VERIFYING =======================");
         Waiting.fewSeconds(5);
 
         Component tablesComponent = switch (category){

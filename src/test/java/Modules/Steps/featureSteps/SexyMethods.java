@@ -84,6 +84,7 @@ public class SexyMethods extends Driver {
 
         for(WebElement element : nonMaintenanceTables){
 
+            System.out.println(element.getText());
             JavaScript.scrollTo(element);
             tableName = element.getText();
 

@@ -11,8 +11,11 @@ import java.util.List;
 public class SendEmail {
 
     private static String formattedDate, currentTime;
+    private static String provider;
 
     public static void send(){
+
+        SendEmail.provider = provider;
 
         boolean doContinue = true;
         int maxRetries = 3, reTry = 1;
@@ -28,20 +31,10 @@ public class SendEmail {
                 EmailAttachment attachment = new EmailAttachment();
                 attachment.setDisposition(EmailAttachment.ATTACHMENT);
 
-                List<String> filePaths = FileAttachments.attachFiles();
-                String htmlMessage = "<html><body><p style=\"font-family: 'Arial', sans-serif; font-size: 16px; color: #333;\">" +
-                        "Good Day Everyone!<br>" +
-                        "The following attachments are the Excel Files Results for each 3rd Party Providers.</p>" +
-                        "Each categories has its own sheet. There are 3 columns for each categories: <b><i>Base List</i></b>, <b><i>Added List</i></b>, and <b><i>Removed List</i></b>.</p>"+
-                        "<ul>" +
-                        "<li><b><i>Base List</i></b>: Is the list that will be compared to by the tables inside the Game Lobby</li>" +
-                        "<li><b><i>Added List</i></b>: List of the tables that are added inside the game and not found in the Base List.</li>" +
-                        "<li><b><i>Removed List</i></b>: Lost of the tables that are inside the Base List, but cannot be found in Game Lobby</li>" +
-                        "</ul>" +
-                        "<p style=\"font-family: 'Arial', sans-serif; font-size: 16px; color: #333;\">Please check the attachments, thank you! - <b>" + " Automation Team "
-                        + "</b></p></body></html>";
+                List<String> filePaths = FileAttachments.attachFiles();;
 
-                email.setHtmlMsg(htmlMessage);
+                // * Setting Message
+                setMessage(email);
 
                 for(String filePath : filePaths){
 
@@ -72,7 +65,6 @@ public class SendEmail {
         }
 
     }
-
     private static HtmlEmail setUpEmail() throws EmailException {
         HtmlEmail email = new HtmlEmail();
 
@@ -87,7 +79,6 @@ public class SendEmail {
 
         return email;
     }
-
     private static void setEmailSubject(HtmlEmail email){
         email.setSubject("Third Party Lobby Checking Report: " + formattedDate + " " + currentTime);
     }
@@ -103,5 +94,76 @@ public class SendEmail {
         System.out.println("SENDING EMAIL...");
         email.send();
         System.out.println("EMAIL SENT SUCCESSFULLY!");
+    }
+    private static void setMessage(HtmlEmail email) throws EmailException {
+        String htmlMessage = "<html><body><p style=\"font-family: 'Arial', sans-serif; font-size: 16px; color: #333;\">" +
+                "Good Day Everyone!<br>" +
+                "The following attachments are the Excel Files Results for each 3rd Party Providers.</p>" +
+                "Each categories has its own sheet. There are 3 columns for each categories: <b><i>Base List</i></b>, <b><i>Added List</i></b>, and <b><i>Removed List</i></b>.</p>"+
+                "<ul>" +
+                "<li><b><i>Base List</i></b>: Is the list that will be compared to by the tables inside the Game Lobby</li>" +
+                "<li><b><i>Added List</i></b>: List of the tables that are added inside the game and not found in the Base List.</li>" +
+                "<li><b><i>Removed List</i></b>: Lost of the tables that are inside the Base List, but cannot be found in Game Lobby</li>" +
+                "</ul>" +
+                "<p style=\"font-family: 'Arial', sans-serif; font-size: 16px; color: #333;\">Please check the attachments, thank you! - <b>" + " Automation Team "
+                + "</b></p></body></html>";
+
+        email.setHtmlMsg(htmlMessage);
+    }
+
+
+
+
+
+    public static void sendSpecific(String provider){
+
+        SendEmail.provider = provider;
+
+        boolean doContinue = true;
+        int maxRetries = 3, reTry = 1;
+
+        formattedDate = Events.FORMATTER.dateFormat();
+        currentTime = Events.FORMATTER.timeFormat();
+
+        while(doContinue){
+
+            try{
+
+                HtmlEmail email = setUpEmail();
+                EmailAttachment attachment = new EmailAttachment();
+                attachment.setDisposition(EmailAttachment.ATTACHMENT);
+
+                List<String> filePaths = FileAttachments.attachFiles(provider);
+
+                // * Setting Message
+                setMessage(email);
+
+                for(String filePath : filePaths){
+
+                    System.out.println("File: " + filePath);
+                    attachment.setPath(filePath);
+
+                    email.attach(attachment);
+                }
+
+                sendEmail(email);
+
+                System.out.println("============================================================");
+
+                doContinue = false;
+
+
+            }catch (EmailException e) {
+
+                System.out.println(e.getMessage());
+
+                reTry++;
+
+                if(reTry == maxRetries){
+                    break;
+                }
+
+            }
+        }
     }
 }

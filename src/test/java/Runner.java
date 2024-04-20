@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
                         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
                 dryRun = false,
                 features = "src/test/resources",
-                glue = "Modules/Steps",
-                tags = "@trials"
+                glue = "Modules/Steps"
+                //tags = "@trials"
         )
 
 public class Runner {

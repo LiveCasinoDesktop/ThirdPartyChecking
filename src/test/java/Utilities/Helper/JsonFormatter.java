@@ -27,10 +27,10 @@ public class JsonFormatter {
 
         String fileName = formattedDate.concat("/"+provider + ".json");
 
-
         try{
 
-            for(Map<String, Object> data : information){System.out.println(data);}
+            for(Map<String, Object> data : information){System.out.println(data
+            );}
 
             ObjectMapper mapper = new ObjectMapper();
 
@@ -81,8 +81,10 @@ public class JsonFormatter {
             List<String> baseList = (List<String>) categoryData.get("baseList");
             // fileList (single cell with comma-separated values)
             List<String> addedList = (List<String>) categoryData.get("addedList");
+            List<String> addedTimeStampList = (List<String>) categoryData.get("addedTimeStamp");
             // lobbyList (separate cells)
             List<String> removedList = (List<String>) categoryData.get("removedList");
+            List<String> removedTimeStampList = (List<String>) categoryData.get("removedTimeStamp");
 
             String categoryName = (String) categoryData.get("category");
             Sheet sheet = workbook.createSheet(categoryName);
@@ -90,32 +92,13 @@ public class JsonFormatter {
 
             headersCells(headerRow, headerStyle);
 
-//            Cell baseListCell = headerRow.createCell(0);
-//            baseListCell.setCellValue("Base List:");
-//            baseListCell.setCellStyle(headerStyle);
-//
-//            Cell addedListCell = headerRow.createCell(2);
-//            addedListCell.setCellValue("Added List:");
-//            addedListCell.setCellStyle(headerStyle);
-//
-//            Cell addedTimeStampCell = headerRow.createCell(3);
-//            addedTimeStampCell.setCellValue("Removed List:");
-//            addedTimeStampCell.setCellStyle(headerStyle);
-//
-//            Cell removedListCell = headerRow.createCell(5);
-//            removedListCell.setCellValue("Removed List:");
-//            removedListCell.setCellStyle(headerStyle);
-//
-//            Cell removedTimeStampCell = headerRow.createCell(6);
-//            removedTimeStampCell.setCellValue("Removed List:");
-//            removedTimeStampCell.setCellStyle(headerStyle);
-
             // Data Rows
             int rowIndex = 1;
 
             Row baseListRow, addedListRow, removedListRow;
             Cell baseListValueCell, addedListValueCell, removedListValueCell;
 
+            // * INPUTTING ALL BASE TABLE THAT ARE ON THE FILE LIST
             for (String item : baseList) {
                 System.out.println(item);
                 baseListRow = sheet.createRow(rowIndex++);
@@ -144,6 +127,18 @@ public class JsonFormatter {
 
             // Data Rows
             rowIndex = 1;
+            // ? INPUT ALL TIMESTAMP
+            if(!addedTimeStampList.isEmpty()){
+
+                for (String item : addedTimeStampList) {
+                    System.out.println(item);
+                    addedListRow = sheet.getRow(rowIndex++);
+                    addedListValueCell = addedListRow.createCell(3);
+                    addedListValueCell.setCellValue(item);
+                }
+            }
+            // Data Rows
+            rowIndex = 1;
 
             // * IF LOBBY LIST IS NOT NULL, PRINT ALL VALUES. ELSE, PRINT NO ISSUE
             if(!removedList.isEmpty()){
@@ -162,9 +157,24 @@ public class JsonFormatter {
                 removedListValueCell.setCellValue("No Issue");
             }
 
+            // Data Rows
+            rowIndex = 1;
+            // ? INPUT ALL TIMESTAMP
+            if(!removedTimeStampList.isEmpty()){
+
+                for (String item : removedTimeStampList) {
+                    System.out.println(item);
+                    addedListRow = sheet.getRow(rowIndex++);
+                    addedListValueCell = addedListRow.createCell(6);
+                    addedListValueCell.setCellValue(item);
+                }
+            }
+
             sheet.autoSizeColumn(0);
             sheet.autoSizeColumn(2);
+            sheet.autoSizeColumn(3);
             sheet.autoSizeColumn(5);
+            sheet.autoSizeColumn(6);
 
         }
 
