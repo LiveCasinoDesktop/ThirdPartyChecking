@@ -17,7 +17,7 @@ public class Constants {
         }
     }
 
-    public static String URL = "https://www.2024bongda.com/";
+    public static String URL = "https://www.2024bongdachauau.com/";
 
 
     // * ====================== EMAIL
