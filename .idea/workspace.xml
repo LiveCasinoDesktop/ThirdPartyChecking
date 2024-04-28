@@ -6,23 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2b97d22c-569b-4065-a5db-682945c2de9c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 19-Apr-24 12-05-14/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 19-Apr-24 12-05-14/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 20-Apr-24 12-03-47/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 20-Apr-24 12-03-47/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 20-Apr-24 12-46-40/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 20-Apr-24 12-46-40/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 20-Apr-24 13-03-34/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 20-Apr-24 13-03-34/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 20-Apr-24 13-18-31/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 20-Apr-24 13-18-31/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/excel/20-Apr-24/evolution.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/reports/excel/20-Apr-24/evolution.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/excel/20-Apr-24/pragmatic.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/reports/excel/20-Apr-24/pragmatic.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/excel/20-Apr-24/sexy.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/reports/excel/20-Apr-24/sexy.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/json/20-Apr-24/Evolution.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/json/20-Apr-24/Evolution.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/json/20-Apr-24/Pragmatic.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/json/20-Apr-24/Pragmatic.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Settings/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Settings/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output" beforeDir="false" afterPath="$PROJECT_DIR$/test-output" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
