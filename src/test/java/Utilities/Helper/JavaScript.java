@@ -19,11 +19,12 @@ public class JavaScript extends Driver {
 
     }
 
-    public static void scrollToTop(){
+    public static void scrollToBottom(){
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         // Execute script to scroll to top (using window.scrollTo)
-        js.executeScript("window.scrollTo(0, 0)");
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+
 
     }
 
@@ -36,6 +37,14 @@ public class JavaScript extends Driver {
         js.executeScript("arguments[0].scrollIntoView(true);", element.get(index-1));
 
     }
+    public static void scrollTo(List<WebElement> element, int index){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        // Execute JavaScript to scroll the element into view:
+        js.executeScript("arguments[0].scrollIntoView(true);", element.get(index-1));
+
+    }
+
     public static void scrollTo(WebElement element){
         JavascriptExecutor js = (JavascriptExecutor) driver;
 

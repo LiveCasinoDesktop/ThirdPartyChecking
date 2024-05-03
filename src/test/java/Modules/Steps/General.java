@@ -7,11 +7,9 @@ import Modules.Steps.featureSteps.EvolutionMethods;
 import Modules.Steps.featureSteps.PragmaticMethods;
 import Modules.Steps.featureSteps.SexyMethods;
 import Utilities.Helper.Drivers;
-import Utilities.Helper.JsonFormatter;
 import Utilities.Helper.Waiting;
 import Utilities.Listeners.Events;
 import Utilities.Listeners.FileEvent;
-import Utilities.Listeners.JsonGenerator;
 import Utilities.Listeners.SendEmail;
 import Utilities.Objects.Component;
 import Utilities.Settings.Constants;
@@ -301,8 +299,13 @@ public class General extends Driver {
     @Then("Send Email")
     public void sendEmail() {
 
+        try{
 
-        SendEmail.send();
+            SendEmail.send();
+        }catch (Exception e){
+
+            SendEmail.send();
+        }
     }
 
 }

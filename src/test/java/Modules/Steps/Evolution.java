@@ -61,10 +61,6 @@ public class Evolution extends Driver {
         FileEvent.readExcel(category, provider);
         tableList = FileEvent.gameList;
 
-        System.out.println("===============");
-        System.out.println("Excel File Table List");
-        System.out.println("Table Size: " + tableList.size());
-        System.out.println("===============");
         for(String table : tableList){
 
             System.out.println(table);
@@ -91,6 +87,7 @@ public class Evolution extends Driver {
         }
 
         EvolutionMethods.verify(category);
+        System.out.println("Total Table In Lobby: " + EvolutionMethods.tableList.size());
 
         System.out.println("=======================");
         System.out.println("Left Join Verification");

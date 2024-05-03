@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b97d22c-569b-4065-a5db-682945c2de9c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/excel/30-Apr-24/pragmatic.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/reports/excel/30-Apr-24/pragmatic.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/excel/30-Apr-24/sexy.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/reports/excel/30-Apr-24/sexy.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/EvolutionMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/EvolutionMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Helper/JavaScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Helper/JavaScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Excel/tableList.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Excel/tableList.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output" beforeDir="false" afterPath="$PROJECT_DIR$/test-output" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +69,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Feature: Evolution.executor": "Run",
+    "Cucumber Java.Feature: SendFile.executor": "Run",
     "Cucumber Java.Scenario: Checking all games of Evolution.executor": "Run",
     "Cucumber Java.Scenario: Send Email.executor": "Run",
     "JUnit.Runner.executor": "Run",
@@ -93,16 +103,15 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
-    <configuration name="Scenario: Checking all games of Evolution" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: Evolution">
+    <configuration name="Feature: Evolution" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Priority1/Evolution.feature" />
       <option name="GLUE" value="Modules.Steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ThirdPartyAutomation" />
-      <option name="NAME_FILTER" value="^Checking all games of Evolution$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Checking all games of Evolution$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Checking all games of Evolution" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Evolution" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -114,15 +123,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Checking all games of Pragmatic" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: SendFile" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Priority1/Pragmatic.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Priority2/SendFile.feature" />
       <option name="GLUE" value="Modules.Steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ThirdPartyAutomation" />
-      <option name="NAME_FILTER" value="^Checking all games of Pragmatic$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Checking all games of Pragmatic$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Checking all games of Pragmatic" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: SendFile" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -185,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Feature: Evolution" />
         <item itemvalue="Cucumber Java.Scenario: Send Email" />
+        <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Feature: SendFile" />
         <item itemvalue="Cucumber Java.Scenario: Checking all games of Sexy Gaming" />
-        <item itemvalue="Cucumber Java.Scenario: Checking all games of Pragmatic" />
-        <item itemvalue="Cucumber Java.Scenario: Checking all games of Evolution" />
       </list>
     </recent_temporary>
   </component>
