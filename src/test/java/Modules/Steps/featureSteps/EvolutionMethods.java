@@ -65,6 +65,8 @@ public class EvolutionMethods extends Driver {
         tables = driver.findElements(By.xpath(tablesComponent.getPath()));
         System.out.println("Table Size: " + tables.size());
 
+        // * CUTTING THE POPULATION
+
         for(WebElement element : tables){
 
             System.out.println(element.getText());

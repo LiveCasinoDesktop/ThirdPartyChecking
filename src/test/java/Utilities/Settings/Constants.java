@@ -17,7 +17,7 @@ public class Constants {
         }
     }
 
-    public static String URL = "https://www.2024bongdachauau.com/";
+    public static String URL = "https://www.2024cupchauau.com/";
 
 
     // * ====================== EMAIL
@@ -36,6 +36,23 @@ public class Constants {
             public static String password = "Darkspg055";
             public static String name = "Karl Parole";
         }
+
+        public static class RECEIVER{
+
+            public static class Receiver1{
+                public static String username = "kar.par@leekie.com";
+                public static String name = "Karl Parole";
+            }
+            public static class SCReceiver{
+                public static String username = "SC@leekie.com";
+                public static String name = "SC";
+            }
+
+            public static class BOSS1{
+                public static String username = "ngd.sts@leekie.com";
+                public static String name = "Ngadiman Sentosa";
+            }
+        }
         public static class Receiver1{
             public static String username = "kar.par@leekie.com";
             public static String name = "Karl Parole";
@@ -49,5 +66,9 @@ public class Constants {
             public static String name = "Michael Aaron Pablo";
         }
 
+        public static class SCReceiver{
+            public static String username = "SC@leekie.com";
+            public static String name = "SC";
+        }
     }
 }

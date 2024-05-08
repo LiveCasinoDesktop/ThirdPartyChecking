@@ -19,6 +19,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import java.io.IOException;
+import java.sql.DriverAction;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,13 +36,30 @@ public class General extends Driver {
     }
     @And("Login Account")
     public void loginAccount() {
-        driver.get(Constants.URL);
 
-        Waiting.fewSeconds(5);
+        try{
+            driver.get(Constants.URL);
 
-        Waiting.element(SBOTOP.Landing.user, 30);
-        Events.sendKeys(SBOTOP.Landing.user, Constants.Accounts.IDR.username);
-        Waiting.fewSeconds(3);
+            Waiting.fewSeconds(5);
+
+            Waiting.element(SBOTOP.Landing.user, 10);
+            Events.sendKeys(SBOTOP.Landing.user, Constants.Accounts.IDR.username);
+            Waiting.fewSeconds(3);
+        }catch (Exception e){
+
+            Drivers.refresh();
+            Waiting.fewSeconds(3);
+
+            driver.get(Constants.URL);
+
+            Waiting.fewSeconds(5);
+
+            Waiting.element(SBOTOP.Landing.user, 30);
+            Events.sendKeys(SBOTOP.Landing.user, Constants.Accounts.IDR.username);
+            Waiting.fewSeconds(3);
+
+        }
+
 
         Waiting.element(SBOTOP.Landing.pass, 30);
         Events.sendKeys(SBOTOP.Landing.pass, Constants.Accounts.IDR.password);

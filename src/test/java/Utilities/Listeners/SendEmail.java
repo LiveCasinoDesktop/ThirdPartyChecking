@@ -84,10 +84,9 @@ public class SendEmail {
     }
     private static void setRecipients(HtmlEmail email) throws EmailException {
 
-        email.addTo(Constants.Email.Receiver1.username, Constants.Email.Receiver1.name); // ! SETTING RECEIVER USERNAME AND NAM
-//        email.addTo(Constants.Email.Receiver2.username, Constants.Email.Receiver2.name); // ! SETTING RECEIVER USERNAME AND NAM
-//        email.addTo(Constants.Email.Receiver3.username, Constants.Email.Receiver3.name); // ! SETTING RECEIVER USERNAME AND NAM
-
+        email.addTo(Constants.Email.RECEIVER.Receiver1.username, Constants.Email.RECEIVER.Receiver1.name);
+//        email.addTo(Constants.Email.RECEIVER.SCReceiver.username, Constants.Email.RECEIVER.SCReceiver.name);
+//        email.addTo(Constants.Email.RECEIVER.BOSS1.username, Constants.Email.RECEIVER.BOSS1.name);
     }
     private static void sendEmail(HtmlEmail email) throws EmailException {
 
@@ -95,6 +94,7 @@ public class SendEmail {
         email.send();
         System.out.println("EMAIL SENT SUCCESSFULLY!");
     }
+
     private static void setMessage(HtmlEmail email) throws EmailException {
         String htmlMessage = "<html><body><p style=\"font-family: 'Arial', sans-serif; font-size: 16px; color: #333;\">" +
                 "Good Day Everyone!<br>" +
