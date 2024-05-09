@@ -17,7 +17,7 @@ public class FileAttachments {
         currDate = Events.FORMATTER.dateFormat();
 
         System.out.println("Current Date: " + currDate);
-        String date = "reports/excel/" + currDate + "/";
+        String date = "reports/"+currDate+"/excel/";
         System.out.println("Path: " + date);
 
         List<String> textFiles = listFiles(date, false);

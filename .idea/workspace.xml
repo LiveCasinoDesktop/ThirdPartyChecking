@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b97d22c-569b-4065-a5db-682945c2de9c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/FileAttachments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/FileAttachments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output" beforeDir="false" afterPath="$PROJECT_DIR$/test-output" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +96,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
+  <component name="RunManager" selected="Cucumber Java.Feature: SendFile">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="ThirdPartyAutomation" />
@@ -169,10 +172,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: SendFile" />
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Feature: SexyGaming" />
         <item itemvalue="Application.Runner" />
-        <item itemvalue="Cucumber Java.Feature: SendFile" />
         <item itemvalue="Cucumber Java.Feature: Evolution" />
       </list>
     </recent_temporary>
