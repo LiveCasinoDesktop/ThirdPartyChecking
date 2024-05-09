@@ -112,9 +112,6 @@ public class SendEmail {
     }
 
 
-
-
-
     public static void sendSpecific(String provider){
 
         SendEmail.provider = provider;

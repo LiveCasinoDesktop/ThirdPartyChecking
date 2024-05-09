@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b97d22c-569b-4065-a5db-682945c2de9c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 1-May-24 09-48-11/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 1-May-24 09-48-11/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 2-May-24 17-42-07/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 2-May-24 17-42-07/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 27-Apr-24 15-30-02/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 27-Apr-24 15-30-02/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 27-Apr-24 15-39-42/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 27-Apr-24 15-39-42/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 28-Apr-24 09-16-45/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 28-Apr-24 09-16-45/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 3-May-24 09-10-14/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 3-May-24 09-10-14/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 3-May-24 09-55-00/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 3-May-24 09-55-00/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 30-Apr-24 09-30-08/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 30-Apr-24 09-30-08/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 30-Apr-24 10-18-22/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 30-Apr-24 10-18-22/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/EvolutionMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/EvolutionMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Helper/JsonFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Helper/JsonFormatter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Settings/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Settings/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output" beforeDir="false" afterPath="$PROJECT_DIR$/test-output" afterDir="false" />
@@ -117,7 +97,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: SexyGaming">
+  <component name="RunManager" selected="JUnit.Runner">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="ThirdPartyAutomation" />
@@ -193,8 +173,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: SexyGaming" />
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Feature: SexyGaming" />
         <item itemvalue="Application.Runner" />
         <item itemvalue="Cucumber Java.Feature: SendFile" />
         <item itemvalue="Cucumber Java.Feature: Evolution" />

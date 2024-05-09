@@ -14,11 +14,11 @@ import java.util.Map;
 
 public class JsonFormatter {
 
-    static String jsonDirectory = "reports/json/";
-    static String excelDirectory = "reports/excel/";
+    static String jsonDirectory = "json/";
+    static String excelDirectory = "excel/";
     public static void generate(List<Map<String, Object>> information, String provider) throws IOException {
 
-        String formattedDate = jsonDirectory.concat(Events.FORMATTER.dateFormat());
+        String formattedDate = "reports/"+Events.FORMATTER.dateFormat().concat("/"+jsonDirectory);
 
         File theDir = new File(formattedDate);
         if (!theDir.exists()){
@@ -54,8 +54,7 @@ public class JsonFormatter {
     }
 
     private static void getValues(String path, String provider) throws IOException {
-
-        String formattedDate = excelDirectory.concat(Events.FORMATTER.dateFormat());
+        String formattedDate = "reports/"+Events.FORMATTER.dateFormat().concat("/"+excelDirectory);
 
         File theDir = new File(formattedDate);
 
