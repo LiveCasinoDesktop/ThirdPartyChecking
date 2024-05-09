@@ -17,7 +17,7 @@ public class Constants {
         }
     }
 
-    public static String URL = "https://www.2024cupchauau.com/";
+    public static String URL = "https://www.2024soikeowc.com/";
 
 
     // * ====================== EMAIL
@@ -52,23 +52,6 @@ public class Constants {
                 public static String username = "ngd.sts@leekie.com";
                 public static String name = "Ngadiman Sentosa";
             }
-        }
-        public static class Receiver1{
-            public static String username = "kar.par@leekie.com";
-            public static String name = "Karl Parole";
-        }
-        public static class Receiver2{
-            public static String username = "hnd.ong@leekie.com";
-            public static String name = "Hendrik Ong";
-        }
-        public static class Receiver3{
-            public static String username = "mich.pab@leekie.com";
-            public static String name = "Michael Aaron Pablo";
-        }
-
-        public static class SCReceiver{
-            public static String username = "SC@leekie.com";
-            public static String name = "SC";
         }
     }
 }
