@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b97d22c-569b-4065-a5db-682945c2de9c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/FileAttachments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/FileAttachments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/Pragmatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Pragmatic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/SexyGaming.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/SexyGaming.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output" beforeDir="false" afterPath="$PROJECT_DIR$/test-output" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +78,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;reports&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kar.par/Documents/GitHub/Desktop/ThirdPartyAutomation&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kar.par/Documents/GitHub/Android/LiveBaccaratAndroidRevamp&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -81,6 +87,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kar.par\Documents\GitHub\Desktop\ThirdPartyAutomation\src\main\resources" />
       <recent name="C:\Users\kar.par\Documents\GitHub\ThirdPartyAutomation\src\test\resources\Excel" />
       <recent name="C:\Users\kar.par\Documents\GitHub\ThirdPartyAutomation" />
       <recent name="C:\Users\kar.par\Documents\GitHub\ThirdPartyAutomation\src\test\resources" />
@@ -100,25 +107,6 @@
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="ThirdPartyAutomation" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: Evolution" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Priority1/Evolution.feature" />
-      <option name="GLUE" value="Modules.Steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="ThirdPartyAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Evolution" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,6 +149,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: Send Email" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Priority2/SendFile.feature" />
+      <option name="GLUE" value="Modules.Steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ThirdPartyAutomation" />
+      <option name="NAME_FILTER" value="^Send Email$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Send Email$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Send Email" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ThirdPartyAutomation" />
       <option name="PACKAGE_NAME" value="" />
@@ -174,9 +182,9 @@
       <list>
         <item itemvalue="Cucumber Java.Feature: SendFile" />
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Scenario: Send Email" />
         <item itemvalue="Cucumber Java.Feature: SexyGaming" />
         <item itemvalue="Application.Runner" />
-        <item itemvalue="Cucumber Java.Feature: Evolution" />
       </list>
     </recent_temporary>
   </component>

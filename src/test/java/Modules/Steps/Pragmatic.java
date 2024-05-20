@@ -116,17 +116,17 @@ public class Pragmatic extends Driver {
         }
 
 
-        if(!fileList.isEmpty() || !lobbyList.isEmpty()){
-
-            System.out.println("Generate JSON");
-            information.add(JsonGenerator.generate(product, tableList, fileList, addedTimeStamp, lobbyList, removedTimeStamp));
-            JsonFormatter.generate(information, provider);
-            SendEmail.sendSpecific(provider);
-
-        }
-        else{
-            information.add(JsonGenerator.generate(product, tableList, fileList, addedTimeStamp, lobbyList, removedTimeStamp));
-            JsonFormatter.generate(information, provider);
-        }
+//        if(!fileList.isEmpty() || !lobbyList.isEmpty()){
+//
+//            System.out.println("Generate JSON");
+//            information.add(JsonGenerator.generate(product, tableList, fileList, addedTimeStamp, lobbyList, removedTimeStamp));
+//            JsonFormatter.generate(information, provider);
+//            SendEmail.sendSpecific(provider);
+//
+//        }
+//        else{
+//            information.add(JsonGenerator.generate(product, tableList, fileList, addedTimeStamp, lobbyList, removedTimeStamp));
+//            JsonFormatter.generate(information, provider);
+//        }
     }
 }

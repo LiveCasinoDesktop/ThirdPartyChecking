@@ -2,6 +2,7 @@ package engine;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 
@@ -20,10 +21,6 @@ public class GoogleChromeDriver extends ChromeDriver {
     private static ChromeOptions getCaps() {
         Map<String, Object> deviceMetrics = new HashMap<>();
 
-//        deviceMetrics.put("deviceName", "Nexus 5");
-//        deviceMetrics.put("width", 460);
-//        deviceMetrics.put("height", 840);
-//        deviceMetrics.put("pixelRatio", 3.0);
 
         Map<String, Object> mobileEmulation = new HashMap<>();
         mobileEmulation.put("deviceMetrics", deviceMetrics);
@@ -43,7 +40,7 @@ public class GoogleChromeDriver extends ChromeDriver {
 //        chromeOptions.setCapability("requireWindowFocus", false);
 //        chromeOptions.setCapability("enablePersistentHover", false);
         //chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
-        //System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, getExecutable());
+        System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, getExecutable());
 
 
         return chromeOptions;
