@@ -146,8 +146,8 @@ public class SexyGaming {
 //        }
 //        else{
 //
-//            information.add(JsonGenerator.generate(product, tableList, fileList, addedTimeStamp, lobbyList, removedTimeStamp));
-//            JsonFormatter.generate(information, provider);
+            information.add(JsonGenerator.generate(product, tableList, fileList, addedTimeStamp, lobbyList, removedTimeStamp));
+            JsonFormatter.generate(information, provider);
 //        }
     }
 }

@@ -33,7 +33,7 @@ public class GoogleChromeDriver extends ChromeDriver {
 
         ChromeOptions chromeOptions = new ChromeOptions();
 
-        //chromeOptions.addArguments("--headless");
+//        chromeOptions.addArguments("--headless");
         //chromeOptions.addArguments("--auto-open-devtools-for-tabs");
         chromeOptions.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 //        chromeOptions.setCapability("ignoreZoomSetting", true);

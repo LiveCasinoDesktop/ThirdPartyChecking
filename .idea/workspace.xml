@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b97d22c-569b-4065-a5db-682945c2de9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-May-24 10-23-21/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-May-24 10-23-21/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 20-May-24 09-27-31/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 20-May-24 09-27-31/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 9-May-24 10-52-46/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 9-May-24 10-52-46/test-output/automaton-report.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/engine/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Evolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/Pragmatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/Pragmatic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/SexyGaming.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/SexyGaming.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Settings/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Settings/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output" beforeDir="false" afterPath="$PROJECT_DIR$/test-output" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +84,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;reports&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kar.par/Documents/GitHub/Android/LiveBaccaratAndroidRevamp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kar.par/Documents/GitHub/Desktop/ThirdPartyAutomation&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -103,7 +109,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: SendFile">
+  <component name="RunManager" selected="JUnit.Runner">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="ThirdPartyAutomation" />
@@ -180,9 +186,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: SendFile" />
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Scenario: Send Email" />
+        <item itemvalue="Cucumber Java.Feature: SendFile" />
         <item itemvalue="Cucumber Java.Feature: SexyGaming" />
         <item itemvalue="Application.Runner" />
       </list>

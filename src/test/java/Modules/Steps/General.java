@@ -30,10 +30,6 @@ public class General extends Driver {
     List<String> tableList, lobbyList, fileList;
     String product;
     String timeStamp;
-    @When("I Go To SBOTOP")
-    public void iGoToSBOTOP() {
-
-    }
     @And("Login Account")
     public void loginAccount() {
 
@@ -299,7 +295,14 @@ public class General extends Driver {
 
     private void clickThirdParty(){
 
-        Waiting.element(thirdPartyComponent, 10);
+        try{
+
+            Waiting.element(thirdPartyComponent, 10);
+        }catch (Exception e){
+            Drivers.refresh();
+            Waiting.element(thirdPartyComponent, 20);
+
+        }
 
         Drivers.hoverToElement(thirdPartyComponent);
         Waiting.fewSeconds(3);

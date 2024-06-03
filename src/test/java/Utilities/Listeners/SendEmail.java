@@ -85,8 +85,8 @@ public class SendEmail {
     private static void setRecipients(HtmlEmail email) throws EmailException {
 
         email.addTo(Constants.Email.RECEIVER.Receiver1.username, Constants.Email.RECEIVER.Receiver1.name);
-        email.addTo(Constants.Email.RECEIVER.SCReceiver.username, Constants.Email.RECEIVER.SCReceiver.name);
-        email.addTo(Constants.Email.RECEIVER.BOSS1.username, Constants.Email.RECEIVER.BOSS1.name);
+//        email.addTo(Constants.Email.RECEIVER.SCReceiver.username, Constants.Email.RECEIVER.SCReceiver.name);
+//        email.addTo(Constants.Email.RECEIVER.BOSS1.username, Constants.Email.RECEIVER.BOSS1.name);
     }
     private static void sendEmail(HtmlEmail email) throws EmailException {
 

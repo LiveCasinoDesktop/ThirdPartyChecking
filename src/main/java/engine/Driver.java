@@ -30,5 +30,12 @@ public class Driver {
     public void close() {
 
         driver.quit();
+
+        try {
+            Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe");  // Windows
+            // Runtime.getRuntime().exec("pkill chromedriver");  // Unix-based
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
