@@ -66,6 +66,19 @@ public class SBOTOP {
                 "//h2[normalize-space()='More Live Casinos']"
         );
 
+        public static Component allBet = new Component(
+                "All Bet",
+                "Button",
+                "Casino",
+                "//div[@id='MoreLiveCasino']//p[@class='game_name'][normalize-space()='Allbet']/ancestor::div[contains(@class, 'game_icon')]"
+        );
+
+        public static Component allBetButton = new Component(
+                "Pragmatic Play Casino",
+                "Button",
+                "Casino",
+                "//p[@class='game_name'][normalize-space()='Allbet']//ancestor::div[@class='game_icon']//button"
+        );
         public static Component pragmatic = new Component(
                 "Pragmatic Play Casino",
                 "Button",

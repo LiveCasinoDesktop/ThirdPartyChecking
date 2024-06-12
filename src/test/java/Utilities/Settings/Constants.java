@@ -7,7 +7,7 @@ public class Constants {
         public static class IDR{
 
             public static String username = "testidr123456";
-            public static String password = "1234qwer";
+            public static String password = "asdf1234**";
         }
 
         public static class THB{
@@ -32,9 +32,9 @@ public class Constants {
         }
 
         public static class Sender{
-            public static String username = "kar.par@leekie.com";
-            public static String password = "Darkspg055";
-            public static String name = "Karl Parole";
+            public static String username = "scautomation@leekie.com";
+            public static String password = "SoftwareControl*";
+            public static String name = "sc automation";
         }
 
         public static class RECEIVER{

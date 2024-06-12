@@ -22,7 +22,6 @@ public class JsonGenerator {
         String jsonData = mapper.writeValueAsString(data);
         System.out.println(jsonData);
 
-
         return data;
 
     }

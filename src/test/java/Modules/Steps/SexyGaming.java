@@ -57,16 +57,16 @@ public class SexyGaming {
 
         try{
             System.out.println("Waiting for Element");
-            Waiting.element(component, 30);
+            Waiting.element(component, 20);
 
         }catch (Exception e){
             Drivers.refresh();
             try{
 
                 System.out.println("Re Trying...");
-                Waiting.element(SBOTOP.SexyNav.closeBanner, 40);
+                Waiting.element(SBOTOP.SexyNav.closeBanner, 10);
                 JavaScript.click(SBOTOP.SexyNav.closeBanner);
-                Waiting.element(component, 40);
+                Waiting.element(component, 10);
             }catch (Exception ignore){}
 
         }
@@ -105,7 +105,7 @@ public class SexyGaming {
 
         SexyMethods.verify(category);
 
-//        tableList = SexyMethods.tableList;
+        tableList = SexyMethods.tableList;
 
         FileEvent.readExcel(category, provider);
         tableList = FileEvent.gameList;
@@ -129,25 +129,18 @@ public class SexyGaming {
 
             if(!SexyMethods.tableList.contains(table)){
 
+                if(table.isEmpty()){continue;}
+
                 System.out.println("Game Lobby have no: " + table);
                 lobbyList.add(table);
                 String timeStamp = Events.FORMATTER.timeFormat();
                 removedTimeStamp.add(timeStamp);
+
             }
         }
 
+        information.add(JsonGenerator.generate(product, tableList, fileList, addedTimeStamp, lobbyList, removedTimeStamp));
+        JsonFormatter.generate(information, provider);
 
-//        if(!fileList.isEmpty() || !lobbyList.isEmpty()){
-//
-//            information.add(JsonGenerator.generate(product, tableList, fileList, addedTimeStamp, lobbyList, removedTimeStamp));
-//            JsonFormatter.generate(information, provider);
-//            SendEmail.sendSpecific(provider);
-//
-//        }
-//        else{
-//
-            information.add(JsonGenerator.generate(product, tableList, fileList, addedTimeStamp, lobbyList, removedTimeStamp));
-            JsonFormatter.generate(information, provider);
-//        }
     }
 }

@@ -100,6 +100,11 @@ public class General extends Driver {
             thirdPartyComponent = SBOTOP.Casino.sexy;
             componentButton = SBOTOP.Casino.sexyButton;
         }
+        else if(thirdParty.equals("All Bet")){
+
+            thirdPartyComponent = SBOTOP.Casino.allBet;
+            componentButton = SBOTOP.Casino.allBetButton;
+        }
         else{
             thirdPartyComponent = SBOTOP.Casino.pragmatic;
             componentButton = SBOTOP.Casino.pragmaticButton;
@@ -129,6 +134,7 @@ public class General extends Driver {
             try{
 
                 Waiting.element(Sexy.IFrame.gameHall, 20);
+
             }catch (Exception e){
 
                 Drivers.refresh();
@@ -300,7 +306,11 @@ public class General extends Driver {
             Waiting.element(thirdPartyComponent, 10);
         }catch (Exception e){
             Drivers.refresh();
-            Waiting.element(thirdPartyComponent, 20);
+
+            try{
+
+                Waiting.element(thirdPartyComponent, 20);
+            }catch (Exception ignore){}
 
         }
 

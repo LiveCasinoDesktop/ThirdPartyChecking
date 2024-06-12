@@ -13,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class SexyMethods extends Driver {
@@ -38,11 +39,11 @@ public class SexyMethods extends Driver {
         };
 
         try{
-            Waiting.element(component, 30);
+            Waiting.element(component, 20);
 
         }catch (Exception e){
             Drivers.refresh();
-            Waiting.element(component, 30);
+            Waiting.element(component, 20);
         }
 
         Waiting.fewSeconds(3);
@@ -57,75 +58,103 @@ public class SexyMethods extends Driver {
         System.out.println("====================================================");
         Waiting.fewSeconds(5);
 
-        Component tablesComponent, nonMaintenance;
+        Component tablesComponent, maintenanceTables;
 
-        switch (category){
-
-            case "Baccarat" -> tablesComponent = SBOTOP.SexyNav.baccaratTables;
-            case "Dragon Tiger" -> tablesComponent = SBOTOP.SexyNav.dragonTigerTables;
-            case "Dice" -> tablesComponent = SBOTOP.SexyNav.diceTables;
-            default -> tablesComponent = SBOTOP.SexyNav.rouletteTables;
-
-        }
-
-        switch (category){
-
-            case "Baccarat" -> nonMaintenance = SBOTOP.SexyNav.baccaratNonMaintenance;
-            case "Dragon Tiger" -> nonMaintenance = SBOTOP.SexyNav.dragonTigerNonMaintenance;
-            case "Dice" -> nonMaintenance = SBOTOP.SexyNav.diceNonMaintenance;
-            default -> nonMaintenance = SBOTOP.SexyNav.rouletteNonMaintenance;
-        }
+        maintenanceTables = maintenance(category);
+        tablesComponent = tablesComponent(category);
 
         tableList = new ArrayList<>();
-        List<WebElement> tables = driver.findElements(By.xpath(tablesComponent.getPath()));
-        List<WebElement> nonMaintenanceTables = driver.findElements(By.xpath(nonMaintenance.getPath()));
+        List<WebElement> notNormalTables = driver.findElements(By.xpath(maintenanceTables.getPath()));
+        List<WebElement> normalTables = driver.findElements(By.xpath(tablesComponent.getPath()));
 
         String tableName;
 
-        for(WebElement element : nonMaintenanceTables){
+        for(WebElement element : normalTables){
 
-            System.out.println(element.getText());
             JavaScript.scrollTo(element);
             tableName = element.getText();
 
             if(!tableName.isEmpty()){
 
-                tableList.add(element.getText());
+//                System.out.println("Table name: " + tableName);
+                JavaScript.scrollTo(element);
+                tableList.add(tableName);
+
             }
         }
-        for(WebElement element : tables){
+
+        System.out.println("-------------------------");
+        for(WebElement element : notNormalTables){
 
             JavaScript.scrollTo(element);
             tableName = element.getText();
-            if(!tableName.isEmpty()){
+
+            if(tableName.contains("Maintenance")){
 
                 String table = element.getText();
-                String[] tableArr = table.split("Maintenance");
 
-                table = tableArr[0];
-                tableArr = table.split("\n");
+                if(!table.isEmpty()){
+                    String[] tableArr;
 
-                table = tableArr[0];
+                    String offTable = "", finalTable;
 
-                tableArr = table.split(" ");
+                    tableArr = table.split("Maintenance");
 
-                table = tableArr[0].concat(tableArr[1]);
-                System.out.println(table);
+                    for(String mainString : tableArr){
 
-                tableList.add(table);
+                        String[] string;
+                        string = mainString.split("\n");
+
+                        System.out.println(String.join(" ", string));
+                        tableList.add(String.join(" ", string));
+
+                    }
+                }
             }
         }
+//        for(WebElement element : tables){
+//
+//            tableName = element.getText();
+//            if(!tableName.isEmpty()){
+//
+//                String table = element.getText();
+//                String[] tableArr = table.split("Maintenance");
+//
+//                table = tableArr[0];
+//                tableArr = table.split("\n");
+//
+//                table = tableArr[0];
+//
+//                tableArr = table.split(" ");
+//
+//                table = tableArr[0].concat(tableArr[1]);
+//                System.out.println(table);
+//
+////                tableList.add(table);
+//            }
+//        }
 
-        System.out.println("===========");
-        System.out.println(tableList.size());
-        System.out.println("==============================");
+    }
+    private static Component tablesComponent(String category){
 
-        for(String element : tableList){
+        return switch (category){
+            case "Baccarat" -> SBOTOP.SexyNav.baccaratNonMaintenance;
+            case "Dragon Tiger" -> SBOTOP.SexyNav.dragonTigerNonMaintenance;
+            case "Dice" -> SBOTOP.SexyNav.diceNonMaintenance;
+            default -> SBOTOP.SexyNav.rouletteNonMaintenance;
+        };
+    }
 
-            System.out.println(element);
-        }
+    private static Component maintenance(String category){
 
+        return switch (category){
 
+            case "Baccarat" -> SBOTOP.SexyNav.baccaratTables;
+            case "Dragon Tiger" -> SBOTOP.SexyNav.dragonTigerTables;
+            case "Dice" -> SBOTOP.SexyNav.diceTables;
+            default -> SBOTOP.SexyNav.rouletteTables;
+
+        };
     }
 
 }
