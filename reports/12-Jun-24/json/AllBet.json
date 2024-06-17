@@ -1,0 +1,116 @@
+[
+  {
+    "category": "Baccarat",
+    "baseList": [
+      "Sexy Baccarat B501",
+      "Sexy Baccarat B502",
+      "Sexy Baccarat B503",
+      "Sexy Baccarat B504",
+      "Sexy Baccarat B505",
+      "Sexy Baccarat B506",
+      "Sexy Baccarat B301",
+      "Sexy Baccarat B302",
+      "Sexy Baccarat B303",
+      "Sexy Baccarat B304",
+      "Baccarat B001",
+      "Baccarat B002",
+      "Baccarat B003",
+      "Baccarat B004",
+      "Baccarat B201",
+      "Baccarat B202",
+      "VIP Baccarat V901",
+      "VIP Baccarat V902",
+      "VIP Baccarat V911",
+      "VIP Baccarat V912",
+      "Classic Baccarat B018",
+      "Classic Baccarat B019",
+      "Classic Baccarat B219",
+      "See Card Baccarat C001",
+      "See Card Baccarat C002",
+      "See Card Baccarat C201",
+      "Insurance Baccarat IB001",
+      "Insurance Baccarat IB002",
+      "Quick Baccarat Q001",
+      "Quick Baccarat Q002",
+      "Quick Baccarat Q003",
+      "Quick Baccarat Q202",
+      "Quick Baccarat Q203"
+    ],
+    "addedList": [],
+    "addedTimeStamp": [],
+    "removedList": [
+      "Quick Baccarat Q001",
+      "Sexy Baccarat B501",
+      "Sexy Baccarat B502",
+      "Sexy Baccarat B503",
+      "VIP Baccarat V901",
+      "Sexy Baccarat B504",
+      "Sexy Baccarat B505",
+      "Sexy Baccarat B506",
+      "VIP Baccarat V902",
+      "VIP Baccarat V911",
+      "VIP Baccarat V912",
+      "Quick Baccarat Q002",
+      "Quick Baccarat Q003",
+      "Quick Baccarat Q202",
+      "Quick Baccarat Q203",
+      "Baccarat B001",
+      "Baccarat B002",
+      "Baccarat B003",
+      "Baccarat B004",
+      "Baccarat B201",
+      "Baccarat B202",
+      "Insurance Baccarat IB001",
+      "Insurance Baccarat IB002",
+      "Classic Baccarat B018",
+      "Classic Baccarat B019",
+      "Classic Baccarat B219",
+      "Sexy Baccarat B301",
+      "Sexy Baccarat B302",
+      "Sexy Baccarat B303",
+      "Sexy Baccarat B304",
+      "See Card Baccarat C001",
+      "See Card Baccarat C002",
+      "See Card Baccarat C201"
+    ],
+    "removedTimeStamp": []
+  },
+  {
+    "category": "Dragon Tiger",
+    "baseList": [
+      "Dragon Tiger D501",
+      "Dragon Tiger D001",
+      "Dragon Tiger D201"
+    ],
+    "addedList": [],
+    "addedTimeStamp": [],
+    "removedList": [
+      "Dragon Tiger D501",
+      "Dragon Tiger D001",
+      "Dragon Tiger D201"
+    ],
+    "removedTimeStamp": []
+  },
+  {
+    "category": "SicBo",
+    "baseList": [
+      "Fish Prawn Crab F001"
+    ],
+    "addedList": [
+      "SicBo S001",
+      "SicBo S201"
+    ],
+    "addedTimeStamp": [
+      "16:17:20",
+      "16:17:20"
+    ],
+    "removedList": [
+      "SicBo S001",
+      "SicBo S201",
+      "Fish Prawn Crab F001"
+    ],
+    "removedTimeStamp": [
+      "16:17:20"
+    ]
+  }
+]

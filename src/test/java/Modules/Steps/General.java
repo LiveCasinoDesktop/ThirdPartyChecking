@@ -119,7 +119,6 @@ public class General extends Driver {
 
         Drivers.maximize();
 
-
         if(thirdParty.equals("Evolution")){
 
             System.out.println("Changing iFrame...");

@@ -46,32 +46,50 @@ public class FileEvent {
     private static int columnLocator(String category, String thirdParty){
         int columnLocator;
 
-        if(thirdParty.equals("Evolution")){
-            switch (category){
+        switch (thirdParty) {
+            case "Evolution" -> {
+                switch (category) {
 
-                case "Roulette" -> columnLocator = 0;
-                case "Game Shows" -> columnLocator = 1;
-                case "Poker" -> columnLocator = 2;
-                default -> columnLocator = 3;
+                    case "Roulette" -> columnLocator = 0;
+                    case "Game Shows" -> columnLocator = 1;
+                    case "Poker" -> columnLocator = 2;
+                    default -> columnLocator = 3;
+                }
             }
-        }
-        else if(thirdParty.equals("Pragmatic")){
-            switch (category){
+            case "Pragmatic" -> {
+                switch (category) {
 
-                case "Baccarat" -> columnLocator = 0;
-                case "Roulette" -> columnLocator = 1;
-                case "Game Shows" -> columnLocator = 2;
-                case "Sic Bo" -> columnLocator = 3;
-                case "Dragon Tiger" -> columnLocator = 4;
-                default -> columnLocator = 5;
+                    case "Baccarat" -> columnLocator = 0;
+                    case "Roulette" -> columnLocator = 1;
+                    case "Game Shows" -> columnLocator = 2;
+                    case "Sic Bo" -> columnLocator = 3;
+                    case "Dragon Tiger" -> columnLocator = 4;
+                    default -> columnLocator = 5;
+                }
             }
-        }
-        else{
-            switch (category){
-                case "Baccarat" -> columnLocator = 0;
-                case "Dragon Tiger" -> columnLocator = 1;
-                case "Dice" -> columnLocator = 2;
-                default -> columnLocator = 3;
+            case "AllBet" -> {
+                switch (category) {
+
+                    case "Baccarat" -> columnLocator = 0;
+                    case "Dragon Tiger" -> columnLocator = 1;
+                    case "SicBo" -> columnLocator = 2;
+                    case "Roulette" -> columnLocator = 3;
+                    case "Bull Bull" -> columnLocator = 4;
+                    case "HiLo" -> columnLocator = 5;
+                    case "Classic PokDeng" -> columnLocator = 6;
+                    case "Two Sides PokDeng" -> columnLocator = 7;
+                    case "Casino War" -> columnLocator = 8;
+                    default -> columnLocator = 9;
+
+                }
+            }
+            default -> {
+                switch (category) {
+                    case "Baccarat" -> columnLocator = 0;
+                    case "Dragon Tiger" -> columnLocator = 1;
+                    case "Dice" -> columnLocator = 2;
+                    default -> columnLocator = 3;
+                }
             }
         }
         return columnLocator;

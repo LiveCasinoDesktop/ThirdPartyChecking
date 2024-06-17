@@ -15,7 +15,7 @@ public class Driver {
     public static String originalWindowHandle;
     public void start() {
 
-        //WebDriverManager.chromedriver().setup();
+//        WebDriverManager.chromedriver().setup();
         driver = new GoogleChromeDriver();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

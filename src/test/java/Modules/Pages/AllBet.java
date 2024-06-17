@@ -4,13 +4,13 @@ import Utilities.Objects.Component;
 
 public class AllBet {
 
-    public static class Navigation{
+    public static class NAVIGATION{
 
         public static Component liveCasino = new Component(
-          "Live Casino",
-          "Button",
-          "Landing",
-          "//button[normalize-space()='LIVE GAMES']"
+                "Live Casino",
+                "Button",
+                "Landing",
+                "//button[normalize-space()='LIVE GAMES']"
         );
 
         public static Component navigation = new Component(
@@ -20,7 +20,7 @@ public class AllBet {
                 "//section[@id='game_types']"
         );
 
-        public static class navButtons{
+        public static class NAVIGATIONBUTTONS{
 
             public static Component baccarat = new Component(
                     "Baccarat",
@@ -136,5 +136,14 @@ public class AllBet {
 
         }
 
+    }
+    public static class Tables{
+
+        public static Component tables = new Component(
+                "Table Name",
+                "Table",
+                "Lobby",
+                "//article[@class='gamehall_table']/div[2]"
+        );
     }
 }
