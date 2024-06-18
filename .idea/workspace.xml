@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b97d22c-569b-4065-a5db-682945c2de9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/AllBet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/AllBetMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/engine/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Pages/AllBet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Pages/AllBet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Pages/SBOTOP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Pages/SBOTOP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/General.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/FileEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/FileEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Excel/tableList.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Excel/tableList.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/17-Jun-24/excel/allbet.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/reports/17-Jun-24/excel/allbet.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/17-Jun-24/excel/pragmatic.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/reports/17-Jun-24/excel/pragmatic.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-Jun-24 12-01-58/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-Jun-24 12-01-58/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-Jun-24 12-57-20/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-Jun-24 12-57-20/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Features/Priority1/AllBet.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/Priority1/AllBet.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output" beforeDir="false" afterPath="$PROJECT_DIR$/test-output" afterDir="false" />
     </list>
@@ -43,12 +44,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="reports" />
-                    <option name="lastUsedInstant" value="1713497022" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1713497021" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1718607093" />
                   </RecentBranch>
                 </list>
               </option>
@@ -58,6 +55,9 @@
         </option>
       </RecentBranches>
     </option>
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="4d69403e-20d9-4a1d-a451-f279f17d64ce" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -80,11 +80,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "reports",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kar.par/Documents/GitHub/Desktop/ThirdPartyAutomation",
+    "last_opened_file_path": "C:/Users/kar.par/Documents/GitHub/Organizations/Desktop/DomainAutomation",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -96,6 +96,7 @@
       <recent name="C:\Users\kar.par\Documents\GitHub\ThirdPartyAutomation\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kar.par\Documents\GitHub\Organizations\Desktop\ThirdPartyAutomation\src\main\resources" />
       <recent name="C:\Users\kar.par\Documents\GitHub\ThirdPartyAutomation\src\test\resources\Features\Priority2" />
       <recent name="C:\Users\kar.par\Documents\GitHub\ThirdPartyAutomation\src\test\resources\Features\Priority1" />
       <recent name="C:\Users\kar.par\Documents\GitHub\ThirdPartyAutomation\src\test\resources\Features" />
@@ -194,6 +195,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Feature: SendFile" />
       </list>
     </recent_temporary>
   </component>
@@ -207,6 +209,17 @@
       <updated>1710291613957</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ThirdPartyAutomation$Scenario__Checking_Evolution_All_Games.ic" NAME="Scenario: Checking Evolution All Games Coverage Results" MODIFIED="1713078855681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

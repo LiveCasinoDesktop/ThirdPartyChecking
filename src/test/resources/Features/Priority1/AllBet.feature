@@ -1,5 +1,5 @@
 @Priority @Priority1 @AllBet
-Feature: Checking Table List in Evolution Casino
+Feature: Checking Table List in All Bet Casino
 
   Background: Logging In
     And Login Account
