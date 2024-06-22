@@ -2,6 +2,7 @@ package Modules.Steps.featureSteps;
 
 import Modules.Pages.AllBet;
 import Utilities.Helper.JsonFormatter;
+import Utilities.Helper.Waiting;
 import Utilities.Listeners.Events;
 import Utilities.Listeners.FileEvent;
 import Utilities.Listeners.JsonGenerator;
@@ -19,6 +20,9 @@ public class AllBetMethods {
 
 
     public static void printAllTables(){
+
+        Waiting.element(AllBet.Tables.tables, 10);
+        Waiting.fewSeconds(3);
 
         List<String> tables = Events.getListText(AllBet.Tables.tables);
         lobbyTables = new ArrayList<>();

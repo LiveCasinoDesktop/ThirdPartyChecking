@@ -1,12 +1,12 @@
 @Priority @Priority1 @AllBet
-Feature: Checking Table List in All Bet Casino
+Feature: Checking Table List in AllBet Casino
 
   Background: Logging In
     And Login Account
     When I Join "All Bet" Casino
 
   @trials
-  Scenario: Checking all games of Evolution
+  Scenario: Checking all games of AllBet
 
     When Try to get All "Baccarat" Tables of AllBet
     Then Verify "Baccarat" of Provider AllBet

@@ -6,17 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="2b97d22c-569b-4065-a5db-682945c2de9c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/17-Jun-24/excel/allbet.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/reports/17-Jun-24/excel/allbet.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/17-Jun-24/excel/pragmatic.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/reports/17-Jun-24/excel/pragmatic.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-Jun-24 12-01-58/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-Jun-24 12-01-58/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-Jun-24 12-57-20/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-Jun-24 12-57-20/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 10-Jun-24 16-03-39/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 10-Jun-24 16-03-39/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 11-Jun-24 09-53-42/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 11-Jun-24 09-53-42/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 12-Jun-24 08-52-58/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 12-Jun-24 08-52-58/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 13-Jun-24 11-15-24/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 13-Jun-24 11-15-24/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 14-Jun-24 15-14-31/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 14-Jun-24 15-14-31/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-Jun-24 15-07-08/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-Jun-24 15-07-08/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 18-Jun-24 10-51-05/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 18-Jun-24 10-51-05/test-output/automaton-report.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/AllBetMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/AllBetMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/Priority1/AllBet.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/Priority1/AllBet.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output" beforeDir="false" afterPath="$PROJECT_DIR$/test-output" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +76,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Feature: AllBet.executor": "Run",
     "Cucumber Java.Feature: Evolution.executor": "Run",
     "Cucumber Java.Feature: SendFile.executor": "Run",
     "Cucumber Java.Scenario: Checking all games of Evolution.executor": "Run",
@@ -80,7 +87,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "reports",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kar.par/Documents/GitHub/Organizations/Desktop/DomainAutomation",
+    "last_opened_file_path": "C:/Users/kar.par/Documents/GitHub/Organizations/Desktop/ThirdPartyAutomation",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -106,7 +113,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
+  <component name="RunManager" selected="Cucumber Java.Feature: AllBet">
     <configuration name="Feature: AllBet" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Priority1/AllBet.feature" />
@@ -115,25 +122,6 @@
       <module name="ThirdPartyAutomation" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: AllBet" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: Evolution" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Priority1/Evolution.feature" />
-      <option name="GLUE" value="Modules.Steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="ThirdPartyAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Evolution" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -183,6 +171,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: Checking all games of Evolution" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Priority1/AllBet.feature" />
+      <option name="GLUE" value="Modules.Steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ThirdPartyAutomation" />
+      <option name="NAME_FILTER" value="^Checking all games of Evolution$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Checking all games of Evolution$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Checking all games of Evolution" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ThirdPartyAutomation" />
       <option name="PACKAGE_NAME" value="" />
@@ -194,8 +202,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Feature: AllBet" />
+        <item itemvalue="Cucumber Java.Scenario: Checking all games of Evolution" />
         <item itemvalue="Cucumber Java.Feature: SendFile" />
+        <item itemvalue="JUnit.Runner" />
       </list>
     </recent_temporary>
   </component>
