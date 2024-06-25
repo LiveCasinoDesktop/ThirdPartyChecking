@@ -6,22 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2b97d22c-569b-4065-a5db-682945c2de9c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 10-Jun-24 16-03-39/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 10-Jun-24 16-03-39/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 11-Jun-24 09-53-42/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 11-Jun-24 09-53-42/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 12-Jun-24 08-52-58/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 12-Jun-24 08-52-58/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 13-Jun-24 11-15-24/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 13-Jun-24 11-15-24/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 14-Jun-24 15-14-31/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 14-Jun-24 15-14-31/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-Jun-24 15-07-08/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 17-Jun-24 15-07-08/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 18-Jun-24 10-51-05/test-output/PdfReport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 18-Jun-24 10-51-05/test-output/automaton-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/GoogleChromeDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/AllBetMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Steps/featureSteps/AllBetMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Listeners/SendEmail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output" beforeDir="false" afterPath="$PROJECT_DIR$/test-output" afterDir="false" />
     </list>
@@ -113,7 +98,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: AllBet">
+  <component name="RunManager" selected="JUnit.Runner">
     <configuration name="Feature: AllBet" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/Priority1/AllBet.feature" />
@@ -202,10 +187,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Feature: AllBet" />
         <item itemvalue="Cucumber Java.Scenario: Checking all games of Evolution" />
         <item itemvalue="Cucumber Java.Feature: SendFile" />
-        <item itemvalue="JUnit.Runner" />
       </list>
     </recent_temporary>
   </component>
