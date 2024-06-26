@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b97d22c-569b-4065-a5db-682945c2de9c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Modules/Pages/Pragmatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Modules/Pages/Pragmatic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output" beforeDir="false" afterPath="$PROJECT_DIR$/test-output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 21-Jun-24 09-35-44/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 21-Jun-24 09-35-44/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 22-Jun-24 13-27-47/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 22-Jun-24 13-27-47/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 24-Jun-24 09-07-21/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 24-Jun-24 09-07-21/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 24-Jun-24 14-48-15/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 24-Jun-24 14-48-15/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 25-Jun-24 12-45-56/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 25-Jun-24 12-45-56/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 25-Jun-24 13-52-57/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 25-Jun-24 13-52-57/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 25-Jun-24 14-15-56/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 25-Jun-24 14-15-56/test-output/automaton-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 26-Jun-24 09-13-20/test-output/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/ThirdParty_Report_ 26-Jun-24 09-13-20/test-output/automaton-report.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
