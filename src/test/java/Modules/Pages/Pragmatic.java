@@ -67,40 +67,40 @@ public class Pragmatic {
             "Baccarat Tables",
             "Button",
             "Casino",
-            "//div[@class='eH_eQ' and not(normalize-space()='Baccarat Multiplay')]"
+            "//div[@class='gp_gy' and not(normalize-space()='Baccarat Multiplay')]"
     );
     public static Component rouletteTables = new Component(
             "Roulette Tables",
             "Button",
             "Casino",
-            "//div[@class='eH_eQ']"
+            "//div[@class='gp_gy']"
     );
 
     public static Component showGamesTables = new Component(
             "Show Games Tables",
             "Button",
             "Casino",
-            "//div[@class='eH_eQ']"
+            "//div[@class='gp_gy']"
     );
 
     public static Component sicBoTables = new Component(
             "Sic Bo Tables",
             "Button",
             "Casino",
-            "//div[@class='eH_eQ']"
+            "//div[@class='gp_gy']"
     );
 
     public static Component dragonTigerTables = new Component(
             "Dragon Tiger Tables",
             "Button",
             "Casino",
-            "//div[@class='eH_eQ']"
+            "//div[@class='gp_gy']"
     );
 
     public static Component andarBaharTables = new Component(
             "Andar Bahar Tables",
             "Button",
             "Casino",
-            "//div[@class='eH_eQ']"
+            "//div[@class='gp_gy']"
     );
 }
